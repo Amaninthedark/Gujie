@@ -1,0 +1,50 @@
+{
+  
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFD39B",
+    "navigationBarTitleText": "古杰装饰",
+    "navigationBarTextStyle":"black"
+  },
+      "tabBar": {
+   
+        "list": [
+          {
+            "iconPath": "images/首页.png",
+            "pagePath": "pages/index/index", 
+            "text": "首页"
+          },
+          {
+            "iconPath": "images/旗子.png",
+            "pagePath": "pages/logs/logs",
+            "text": "团队"
+          },
+          {
+            "iconPath": "images/文档.png",
+            "pagePath": "pages/logs/logs",
+            "text": "案例"
+          },
+          {
+            "iconPath": "images/购物车.png",
+            "pagePath": "pages/logs/logs",
+            "text": "商城"
+          },
+          {
+            "iconPath": "images/我的.png",
+            "pagePath": "pages/logs/logs",
+            "text": "我的"
+          }
+        ]
+      },
+      "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+      },
+      "debug": true
+  }
+ 
+

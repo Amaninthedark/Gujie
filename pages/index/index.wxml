@@ -1,0 +1,194 @@
+<import src="../../wxSearch/wxSearch.wxml"  />
+
+ <view>
+ 
+  <swiper indicator-dots="{{indicatorDots}}"  
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:230px;'>  
+        <block wx:for="{{imgUrls}}">  
+          <swiper-item>  
+            <navigator url="{{item.link}}" hover-class="navigator-hover">  
+              <image src="{{item.url}}" class="slide-image" width="355" height="230"/>  
+            </navigator>   
+          </swiper-item>  
+        </block>   
+  </swiper> 
+</view>
+<view class='index-search'>
+  <view class='index-search-form' >
+     GJ
+    <label><icon type="search" size="15" />搜索喜欢的商品</label>
+  </view> 
+</view>
+<view class='index-conten'>
+    <view class='index-page'>
+      <view class='index-page-conten'>
+        <view class='index-page-image'>
+          <image src="/images/4.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          装修
+        </view>
+      </view>
+        <view class='index-page-conten'>
+        <view class='index-page-image'>
+          <image src="/images/2.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+        预约量房
+        </view>
+      </view>
+      <view class='index-page-conten'>
+        <view class='index-page-image'>
+        <image src="/images/1.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          免费咨询
+        </view>
+      </view>
+        <view class='index-page-conten'>
+        <view class='index-page-image'>
+          <image src="/images/2.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          在线工地
+        </view>
+      </view>
+        <view class='index-page-conten'>
+        <view class='index-page-image'>
+          <image src="/images/3.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          古杰商城
+        </view>
+      </view>
+        <view class='index-page-conten'>
+        <view class='index-page-image'>
+          <image src="/images/4.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          我的团队
+        </view>
+      </view>
+  
+  </view>
+    <view class='index-goods'>
+        <view class='index-goods-title'>
+          为你选优
+        </view>
+        <view class='index-goods-conten'>
+          <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              地板馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/6.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              木材馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/7.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+               手机馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/5.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              油漆馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/9.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              装饰馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/6.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              家具馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/7.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              手机馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/8.jpg'></image>
+            </view>
+          </view>
+
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              钟表馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/9.jpg'></image>
+            </view>
+          </view>
+
+            <view class='index-goods-shop'>
+            <view class='goods-shop-top'>
+              母婴馆
+            </view>
+            <view class='goods-shop-title'>
+              "下单立减"
+            </view>
+            <view class='goods-shop-body'>
+              <image src='/images/7.jpg'></image>
+            </view>
+          </view>
+
+
+       
+
+         
+        </view>
+    </view>
+</view>
