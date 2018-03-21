@@ -1,0 +1,10 @@
+.yuyue-tupian{width: 200rpx;height: 200rpx;margin: auto;margin-top: 30rpx;}
+.yuyue-tupian image{width: 100%;height: 100%;overflow: hidden;}
+.yuyue-tupian-bottom{text-align: center;margin-top: 20rpx;font-size: 35rpx;margin-bottom: 30rpx;}
+.yuyue-name,.yuyue-name-yanzheng{height: 95rpx;width: 100%;}
+.yuyue-name input{width: 75%;float: right;}
+.yuyue-text{margin-top: 13rpx;margin-left: 26rpx;float: left;font-size: 30rpx;}
+.yuyue-name-yanzheng input{margin-left: 18rpx;width: 40%;float: left;}
+.yuyue-anniu{padding-top: 5rpx;text-align: center;  float: right;width: 250rpx; height: 60rpx; padding-top: -30px;background-color:#f4cc5c;}
+.yuyue-tijiao{margin-top: 50rpx;background-color: #e0620d;}
+.yuyue-footer{text-align: center;font-size: 25rpx;margin-top: 30rpx;}

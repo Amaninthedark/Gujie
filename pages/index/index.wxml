@@ -21,14 +21,21 @@
 </view>
 <view class='index-conten'>
     <view class='index-page'>
+   
       <view class='index-page-conten'>
+      
         <view class='index-page-image'>
+      
+
           <image src="/images/4.jpg" ></image> 
+        
         </view>
+         
         <view class='index-page-text'>
           装修
         </view>
       </view>
+     
         <view class='index-page-conten'>
         <view class='index-page-image'>
           <image src="/images/2.jpg" ></image> 
@@ -40,7 +47,7 @@
       <view class='index-page-conten'>
         <view class='index-page-image'>
         <image src="/images/1.jpg" ></image> 
-        </view>
+        </view> 
         <view class='index-page-text'>
           免费咨询
         </view>

@@ -1,0 +1,70 @@
+.youhuiquan{
+  margin-top: 20rpx;
+  width: 100%;
+  height: 210rpx;
+}
+.youhuiquan-hearder{
+  opacity:0.5;
+  margin: auto;
+  width: 100%;
+  height: 60rpx;
+  background-color:#f7f5f5;
+  
+}
+.youhuiquan-hearder .iconfont{
+  float: left;
+  margin: 15rpx 10rpx 10rpx 18rpx;
+}
+.youhuiquan-hearder-wenzi-left{
+  margin-top: 10rpx;
+  float: left;
+  font-size: 30rpx;
+}
+.youhuiquan-hearder-wenzi-right{
+  margin-right: 30rpx;
+  margin-top: 10rpx;
+  float: right;
+  font-size: 25rpx;
+  color: #bfbfbf;
+}
+.youhuiquan-main{
+  margin: auto;
+  margin-bottom: 15rpx;
+  width: 95%;
+  height: 150rpx;
+  border: #e6e6e6 solid 1rpx;
+}
+.youhuiquan-main-left{
+  float: left;
+  width: 70%;
+  height: 150rpx;
+
+}
+.youhuiquan-main-left  .iconfont{
+  float: left;
+  font-size: 50rpx;
+  color: yellowgreen;
+  margin: 40rpx 2rpx 30rpx 30rpx;
+}
+.youhuiquan-main-left1{
+   float: left;
+  font-size: 30rpx;
+  margin: 45rpx 2rpx 30rpx 30rpx;
+}
+.youhuiquan-main-right{
+  float: left;
+  width: 28.8%;
+  border-left: #e6e6e6 dashed 1px;
+  height: 150rpx;
+}
+ .youhuiquan-main-right text{
+   width: 50rpx;
+   height: 50rpx;
+   float: right;
+   margin-top: 45rpx;
+   margin-right: 80rpx;
+  border: red solid 1rpx;
+  border-radius: 50rpx;
+  font-size: 33rpx;
+  padding-left: 23rpx;
+} 

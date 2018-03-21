@@ -1,0 +1,6 @@
+ 
+<view class="kefuhuihua">  
+  <input   confirm-type="done"  placeholder="" />  
+ <image src='../images/xiaolian.png' class="xiaolian"></image>
+ <image src='../images/jia.png' class="jia"></image> 
+</view>

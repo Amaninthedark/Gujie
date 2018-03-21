@@ -1,0 +1,86 @@
+<view class='bg'>
+<view class="container" >
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view>
+
+  <navigator class='soujin1'  url="../dai/wdedingdan">
+        <view class='shou'>
+            <view class='iconfont icon-74wodedingdan'></view>
+            <view class='biankuang'>
+            <view class='shou-dingdan'>我的订单</view>
+            <view style='float: right;' class='iconfont icon-jiantou' ></view>
+            </view>
+        </view>
+ </navigator>
+<view class='main-dai'>
+      <view  bindtap='toast' class='main-dai1'>
+        <view  class='iconfont icon-daifukuan' ></view>
+        <text>待付款</text>
+      </view >
+    <view  bindtap='toast2' class='main-dai1'>
+        <view class='iconfont icon-icon2' ></view>
+        <text>待发货</text>
+        </view >
+        <view  bindtap='toast3' class='main-dai1'>
+        <view class='iconfont icon-daishouhuo' ></view>
+        <text>待收货</text>
+      </view >
+       <view  bindtap='toast4' class='main-dai1'>
+        <view class='iconfont icon-tuikuanshouhou' ></view>
+        <text>售后</text>
+        </view >
+ </view>
+<view class='kuang'>
+ <navigator class='soujin'  url="../gouwuche/gouwuche">
+        <view class='shou1'>
+            <view class='iconfont icon-gouwuche'></view>
+                <view class='biankuang'>
+            <view class='shou1-dingdan'>购物车</view>
+            <view style='float: right;' class='iconfont icon-jiantou' ></view>
+            </view>
+        </view>
+ </navigator>
+ <navigator class='soujin'  url="../wdeshoucang/wdeshoucang">
+        <view class='shou1'>
+            <view class='iconfont icon-wodeshoucang'></view>
+                <view class='biankuang'>
+            <view class='shou1-dingdan'>我的收藏</view>
+            <view style='float: right;' class='iconfont icon-jiantou' ></view>
+             </view>
+        </view>
+ </navigator>
+ <navigator class='soujin'  url="../youhuiquan/youhuiquan">
+        <view class='shou1'>
+            <view class='iconfont icon-youhuiquan'></view>
+                <view class='biankuang'>
+            <view class='shou1-dingdan'>优惠券</view>
+            <view style='float: right;' class='iconfont icon-jiantou' ></view>
+             </view>
+        </view>
+ </navigator>
+ <navigator class='soujin'  url="../dizhiguanli/dizhiguanli">
+        <view class='shou1'>
+            <view class='iconfont icon-dizhiguanli'></view>
+                <view class='biankuang'>
+            <view class='shou1-dingdan'>地址管理</view>
+            <view style='float: right;' class='iconfont icon-jiantou' ></view>
+             </view>
+        </view>
+  </navigator>
+  <navigator  class='soujin'  url="../lianxiwmen/lianxiwmen">
+        <view class='shou1' style=' border-bottom:0px;'>
+            <view class='iconfont icon-lianxiwomen'></view>
+                <view class='biankuang'>
+            <view class='shou1-dingdan'>联系我们</view>
+            <view style='float: right;' class='iconfont icon-jiantou' ></view>
+             </view>
+        </view>
+  </navigator>
+  </view>
+   </view>

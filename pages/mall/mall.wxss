@@ -1,0 +1,246 @@
+/* icon图标 */
+
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1521195100896'); /* IE9*/
+  src: url('iconfont.eot?t=1521195100896#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('iconfont.ttf?t=1521195100896') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1521195100896#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gouwuchekong:before { content: "\e600"; }
+
+.icon-triangle-bottom:before { content: "\e62b"; }
+
+.icon-triangle-top:before { content: "\e635"; }
+
+.icon-jia:before { content: "\e623"; }
+
+.icon-jian:before { content: "\e619"; }
+
+
+
+
+
+.section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.search {
+  display: block;
+  background: #707070;
+  height: 5%;
+  padding: 1.5% 3%;
+}
+.search input {
+  width: 100%;
+  border-radius: 13px;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+  text-align: center;
+  margin: auto;
+}
+.mall-bottom{
+  height: 95%;
+  display: flex;
+}
+.left {
+  height: 100%;
+  background: #f4f4f4;
+  text-align: center;
+  font-size: 24rpx;
+  flex: 20%;
+  color: #666;
+}
+
+.left::before {
+  content: "";
+  position: absolute;
+  background: #dcdcdc;
+  right: 0;
+  top: 0;
+  border-right: 1rpx solid #dcdcdc;
+}
+.left view.active {
+  background: #fff;
+  position: relative;
+  z-index: 2;
+  color: #0092d8;
+  border-left: 4rpx solid #0092d8;
+}
+
+.left view {
+  height: 110rpx;
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+
+ 
+}
+.clickSel{
+ background: #ffffff;
+color:#EECFA1;
+border-left: 8rpx solid #EECFA1;
+} 
+.removeSel {  
+  color: black;  
+}  
+  
+.right{
+  flex:80%;
+  height:100%;
+  overflow:hidden;
+  background:#fff;
+
+}
+.tabTit {
+  height:70rpx;
+line-height:30rpx;
+border-bottom:solid 1px #eee;
+width:100%;
+z-index:1;
+background:#ffffff;
+font-size:26rpx;
+display:flex;
+color:#666;
+
+}
+
+.flex1 {
+  width: 33.33%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  position: relative;
+  
+}
+.flex1 text{
+  padding-left:40rpx;
+margin-top:20rpx;
+font-size:25rpx;
+
+}
+.fs-up{
+    display: inline-block;
+    width: 7px;
+    margin-left: 5px;
+}
+.icon-triangle-top{
+  position: absolute;
+  margin-top:13rpx;
+
+  font-size: 15rpx;
+}
+.icon-triangle-bottom{
+ position:absolute;
+  bottom:15rpx;
+  font-size:15rpx;
+
+}
+.mall-list{
+  height: 90%;
+}
+.ping {
+  display: flex;
+  width: 100%;
+  padding: 5rpx 5rpx 0rpx 5rpx;
+  border-bottom: 1rpx solid #f4f4f4;
+}
+
+.ping_b {
+  flex: 0.25;
+  text-align: center;
+}
+
+.ping image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.ping_aa {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  height: 72rpx;
+  font-size: 26rpx;
+}
+
+.ping_a {
+  flex: 0.72;
+  font-size: 28rpx;
+  padding:0rpx 10rpx 0rpx 10rpx;
+}
+.ping_num{
+  display: flex;
+}
+.ping_cc {
+  display: inline-block;
+  font-size: 20rpx;
+  color: #999;
+  margin: 6rpx 0;
+  margin-left: 5rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.ping_dd{
+  display: inline-block;
+  font-size: 20rpx;
+  color: #999;
+  margin: 6rpx 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 15rpx;
+}
+
+.ping_ee {
+  color: #ff5f00;
+  flex: 1;
+}
+.padding_sp {
+  display: flex;
+  align-items: center;
+}
+.icon-jian{
+  margin: 0rpx 25rpx 0rpx 25rpx;
+}
+.icon-jia{
+  margin: 0rpx 25rpx 0rpx 25rpx;
+}
+
+.cart{
+  width: 100rpx;
+  height: 100rpx;
+  bottom:50rpx;
+  right: 50rpx;
+  position: absolute;
+  background: #EEEEE0;
+  text-align: center;
+  line-height: 100rpx;
+  border-radius: 50%;
+  opacity:0.9;
+}
+.icon-gouwuchekong{
+  color: #8B8B83;
+  font-size: 60rpx;
+
+}
+
+

@@ -1,0 +1,129 @@
+/* pages/Personaldetails/Personaldetails.wxss */
+.content{
+
+  width: 100%;
+  height: 950rpx;
+ 
+}   
+.heard{
+  width: 100%;
+  height: 300rpx;
+ 
+    display: flex;
+  align-items: flex-end;
+  justify-content:center;
+}
+.heard-content{
+  width: 150rpx;
+  height: 250rpx;
+
+ 
+}
+.heard-images{
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 10px;
+}
+.heard-images image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.heard-name{
+  width: 150rpx;
+  height: 100rpx;
+  font-family: serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.personaldata{
+  width: 100%;
+  height: 250rpx;
+}
+.personalyear{
+  width: 100%;
+  height: 50rpx;
+ font-size: 15px;
+  font-family: '黑体';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.personaltext-type{
+  width: 100%;
+  height: 35rpx;
+  font-family: '黑体';
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.personaltext-idea{
+  width: 98%;
+  height: 180rpx;
+  font-family: '黑体';
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  padding-left: 10rpx;
+}
+.introduce{
+  width: 100%;
+  height: 250rpx;
+ 
+}
+.introduce-title{
+  width: 98%;
+  height: 50rpx;
+  font-size: 15px;
+  font-family: '黑体';
+  padding-left: 10rpx;
+}
+.introduce-content{
+  width: 98%;
+  height: 100rpx;
+  font-size: 13px;
+  font-family: '黑体';
+  display: flex;
+  justify-content: center;
+  padding-left: 10rpx;
+}
+button{
+  width: 100%;
+  height: 80rpx;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15px;
+}
+.design{
+  width: 100%;
+  height:350rpx;
+  
+  
+}
+.desing-title{
+  width: 200rpx;
+  height: 50rpx;
+  font-size: 17px;
+  font-family: '黑体';
+  padding-left: 20px;
+  
+}
+.desing-images{
+   padding-top: 10rpx;
+     padding-left: 18rpx;
+  width: 720rpx;
+  height: 300rpx; 
+
+}
+.desing-images image{
+  width: 100%;
+  height: 100%;
+}

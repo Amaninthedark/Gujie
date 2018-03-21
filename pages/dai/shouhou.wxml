@@ -1,0 +1,139 @@
+
+<view class='daifukuan-neirong'>
+     <view class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>卖家已发货</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../images/likepro.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu'>确认收货</view> </navigator> 
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu1'>售后</view> </navigator> 
+            </view>
+        </view>
+            <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-baoxianxiaoshou'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>保证金</view>
+            <view class='daifukuan-zhu-hearder-right'>保险单已出单</view>
+        </view>
+     </view>
+
+
+          <view class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>卖家已发货</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../images/likepro.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu'>确认收货</view> </navigator> 
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu1'>售后</view> </navigator> 
+            </view>
+        </view>
+            <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-baoxianxiaoshou'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>保证金</view>
+            <view class='daifukuan-zhu-hearder-right'>保险单已出单</view>
+        </view>
+     </view>
+
+
+
+          <view class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>卖家已发货</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../images/likepro.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu'>确认收货</view> </navigator> 
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu1'>售后</view> </navigator> 
+            </view>
+        </view>
+            <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-baoxianxiaoshou'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>保证金</view>
+            <view class='daifukuan-zhu-hearder-right'>保险单已出单</view>
+        </view>
+     </view>
+
+
+
+          <view class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>卖家已发货</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../images/likepro.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu'>确认收货</view> </navigator> 
+              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu1'>售后</view> </navigator> 
+            </view>
+        </view>
+            <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-baoxianxiaoshou'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>保证金</view>
+            <view class='daifukuan-zhu-hearder-right'>保险单已出单</view>
+        </view>
+     </view>
+</view>

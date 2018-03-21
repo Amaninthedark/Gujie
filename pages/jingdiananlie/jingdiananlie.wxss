@@ -1,0 +1,231 @@
+.jingdiananlie-1{
+  width: 100%;
+  height: 100rpx;
+}
+.jingdiananlie-left{
+  font-size: 30rpx;
+  text-align: center;
+  background-color:#efb336; 
+  float: left;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  width:80rpx;
+  height: 40rpx;
+  border-radius: 15rpx;
+}
+.jingdiananlie-right{
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+  float: left;
+  width: 300rpx;
+  height: 60rpx;
+}
+.jingdiananlie-2{
+   margin-left: 10rpx;
+  font-size: 30rpx;
+  color: #bfbfbf;
+}
+.jingdiananlie-3{
+  margin-left: 10rpx;
+  height: 50rpx;
+  width: 100%;
+}
+.jingdiananlie-3-zi1{
+  color: #bfbfbf;
+  font-size: 30rpx;
+  margin-right: 20rpx;
+  float: left;
+  height: 30rpx;
+}
+.jingdiananlie-3-zi11{
+  margin-right: 20rpx;
+  float: right;
+  font-size: 30rpx;
+  color: #bfbfbf;
+}
+.jingdiananlie-4{
+  height: 200rpx;
+  width: 200%;
+}
+.jingdiananlie-4-zong{
+  margin-top: 30rpx;
+  height: 70rpx;
+}
+
+.jingdiananlie-4-zong image{
+  color: #bfbfbf;
+  margin-left: 10rpx;
+  /* display: none; */
+  width: 740rpx;
+  height: 90rpx;
+
+}
+.jingdiananlie-5{
+  margin-top: 30rpx;
+  height: 100rpx;
+  width: 100%;
+}
+.jingdiananlie-5-left{
+  margin-left: 10rpx;
+  text-align: center;
+  font-size: 35rpx;
+  width: 100rpx;
+  height: 90rpx;
+  float: left;
+  background-color: #efb336;
+  box-shadow:5px 2px 3px #000;
+}
+.jingdiananlie-5-main{
+  margin-left: 30rpx;
+  width: 60%;
+  height: 90rpx;
+  float: left;
+  overflow: hidden;
+}
+.jingdiananlie-5-botton{
+  margin-right: 10rpx;
+  font-size: 25rpx;
+  float: right;
+  color: #cdcdcd;
+}
+.jingdiananlie-5-main1{
+  margin-right: 10rpx;
+  float: left;
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 45rpx;
+}
+.jingdiananlie-5-main1 image{
+  width: 100%;
+  height: 100%;
+}
+.jingdiananlie-6{
+  margin-left: 10rpx;
+  margin-top: 45rpx;
+
+    width: 100%;
+    height: 50rpx;
+    font-weight: normal;
+}
+.jingdiananlie-7{
+  margin-top: 20rpx;
+    width: 100%;
+    height: 50rpx;
+}
+.jingdiananlie-7-left{
+  margin-left: 10rpx;
+  float: left;
+  font-size: 30rpx;
+  color: #8a8a8a;
+}
+.jingdiananlie-7-right{
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+  float: right;
+  font-size: 30rpx;
+  color: #8a8a8a;  
+}
+.jingdiananlie-8{
+  margin-left: 30rpx;
+  padding-top: 20rpx;
+  clear: both;
+  font-size: 28rpx;
+  height: 50rpx;
+  width: 100%;
+}
+.jingdiananlie-9-left1{
+  margin-left: 10rpx;
+  float: left;
+  height: 80rpx;
+  width: 80rpx;
+  border-radius: 40rpx;
+}
+.jingdiananlie-9-left1 image{
+  width: 100%;
+  height: 100%;
+}
+.jingdiananlie-9-left2{
+  margin-left: 25rpx;
+  margin-top: 30rpx;
+  float: left;
+  font-size: 30rpx;
+}
+.jingdiananlie-9-right{
+    margin-top: 30rpx;
+    margin-right: 10rpx;
+  float: right;
+  font-size: 30rpx;
+}
+.jingdiananlie-10{
+  clear: both;
+  height: 210rpx;
+  width: 100%;
+}
+.jingdiananlie-10-image1{
+   margin: auto;
+   margin-left:95rpx;
+  float: left;
+  width: 190rpx;
+  height: 190rpx;
+}
+.jingdiananlie-10-image{
+   margin: auto;
+   margin-left: 15rpx;
+  float: left;
+  width: 190rpx;
+  height: 190rpx;
+}
+.jingdiananlie-10-image image,.jingdiananlie-10-image1 image{
+  width: 100%;
+  height: 100%;
+}
+.jingdiananlie-11{
+  margin-top: 10rpx;
+  height: 50rpx;
+  width: 100%;
+}
+.jingdiananlie-11 .iconfont{
+  margin-right: 10rpx;
+  float: right;
+  font-size: 30rpx;
+}
+.jingdiananlie-12{
+  margin-left: 95rpx; 
+  padding-top: 20rpx;
+  clear: both;
+  font-size: 25rpx;
+  height: 50rpx;
+  width: 50%;
+}
+.post {
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  text-align: center;
+  width: 85rpx;
+  font-size: 28rpx;
+    float: right;
+    background-color: #efb336;
+    position: fixed;
+    bottom: 90px;
+    right: 10px;  
+    height: 85rpx;
+    border: 0 solid #efb336;
+    border-radius: 500px;
+    box-shadow: 4px 1px 1px #cccccc;
+
+}
+.post1{
+  padding: 15rpx 15rpx 15rpx 15rpx;
+  text-align: center;
+  width: 85rpx;
+  font-size: 28rpx;
+    float: right;
+    background-color: #efb336;
+    position: fixed;
+    bottom: 20px;
+    right: 10px;  
+    height: 85rpx;
+    border: 0 solid #efb336;
+    border-radius: 500px;
+    box-shadow: 4px 1px 1px #cccccc;
+
+}

@@ -1,0 +1,74 @@
+<view class='width:100%;'>
+<view class='jingdiananlie-1'>
+   <view class='jingdiananlie-left'>安装</view>
+   <view class='jingdiananlie-right'>金色丽都</view>
+</view>
+<view class='jingdiananlie-2'>金色丽都</view>
+<view class='jingdiananlie-3'>
+    <view class='jingdiananlie-3-zi1'>浏览： 11</view>
+    <view class='jingdiananlie-3-zi1'>评论： 0</view>
+    <view class='jingdiananlie-3-zi1'>更新： 8</view>
+    <view class='jingdiananlie-3-zi11'>10.58Km</view>
+</view>
+<!-- <view class='xuanzhe'>
+  <view>基础改造</view>
+</view>
+  <view class='jingdiananlie-4' >
+     <view class='jingdiananlie-4-zong' > 
+               <image src='../images/{{img}}.png'></image>   
+     
+     </view>
+</view>   -->
+<view class='jingdiananlie-5'>
+   <view class='jingdiananlie-5-left'>好友足迹</view>
+   <view class='jingdiananlie-5-main'>
+      <view class='jingdiananlie-5-main1'><image src='../images/navli5.png'></image></view>
+      <view class='jingdiananlie-5-main1'><image src='../images/navli6.png'></image></view>
+      <view class='jingdiananlie-5-main1'><image src='../images/navli7.png'></image></view>
+      <view class='jingdiananlie-5-main1'><image src='../images/navli8.png'></image></view>
+   </view>
+   <view class='jingdiananlie-5-botton'>等11位好友</view>
+</view>
+<view class='jingdiananlie-6'>房屋信息</view>
+<view class='jingdiananlie-7'>
+  <view class='jingdiananlie-7-left' >户型： 4室，2厅，1厨，2卫</view>
+  <view class='jingdiananlie-7-right' >价格： 18万</view>
+</view>
+
+  <view class='jingdiananlie-7-left' >风格： 欧式</view>
+  <view class='jingdiananlie-7-right' >面积： 233㎡</view>
+
+<view class='jingdiananlie-8'>油漆</view>
+
+<view class='jingdiananlie-9'>
+    <view class='jingdiananlie-9-left1'><image src='../images/navli5.png'></image></view>
+    <view class='jingdiananlie-9-left2'>业主-业主</view>
+    <view class='jingdiananlie-9-right'>2017-12-12</view>
+</view>
+<view class='jingdiananlie-10'>
+   <view class='jingdiananlie-10-image1'><image src='../images/likepro.jpg'></image></view>
+   <view class='jingdiananlie-10-image'><image src='../images/likepro.jpg'></image></view>
+   <view class='jingdiananlie-10-image'><image src='../images/likepro.jpg'></image></view>
+</view>
+<view class='jingdiananlie-11'>
+   <view class='iconfont icon-xiepinglun'> 评论</view>
+</view>
+  
+ <!-- <icon type="success"  class="post" bindtap="onPostClick"/> -->
+<!-- <icon type="success" size="50" class="post1" bindtap="onPostClick"/>  -->
+<view class='jingdiananlie-9'>
+    <view class='jingdiananlie-9-left1'><image src='../images/navli5.png'></image></view>
+    <view class='jingdiananlie-9-left2'>项目经理</view>
+    <view class='jingdiananlie-9-right'>2017-12-12</view>
+</view>
+  <view class='jingdiananlie-12'>油漆工人</view>
+<view class='jingdiananlie-10'>
+   <view style='height:150rpx;' class='jingdiananlie-10-image1'><image src='../images/likepro.jpg'></image></view>
+   <view style='height:150rpx;' class='jingdiananlie-10-image'><image src='../images/likepro.jpg'></image></view>
+   <view style='height:150rpx;' class='jingdiananlie-10-image'><image src='../images/likepro.jpg'></image></view>
+</view>
+
+ 
+   <view   class='post'>预约 参观</view> 
+   <view   class='post1'>收藏 案例</view> 
+</view>

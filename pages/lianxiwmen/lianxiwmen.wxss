@@ -1,0 +1,10 @@
+.lianxiwmen1{
+  margin: 100rpx 0rpx 0rpx 20%;
+}
+.lianxiwmen2{
+  width: 100%;
+  margin: auto;
+  margin-left: 30%;
+  margin-top: 10rpx;
+  font-size: 25rpx;
+}

@@ -1,0 +1,18 @@
+.gouwu{
+  width: 100%;
+  text-align: center;
+}
+.gouwu .iconfont{
+  /* margin-left: 40%; */
+  margin-top: 100rpx;
+  color: #cdcdcd;
+  font-size: 150rpx;
+}
+.gouwu text{
+  font-size: 25rpx;
+}
+.gouwu button{
+  margin: auto;
+  margin-top: 80rpx;
+  width: 80%;
+}

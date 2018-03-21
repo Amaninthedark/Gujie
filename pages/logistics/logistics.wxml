@@ -1,0 +1,29 @@
+<!--pages/order/order_wl.wxml-->
+<view class='top'>
+  <image src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=996032835,1968172858&fm=58"> </image>
+  <view class='page_clu logistics'>
+    <view>物流公司: {{wuliu.company}}</view>
+    <view>物流单号: {{wuliu.nu}}</view>
+    <view>官方电话: {{wuliu.phone}}</view>
+  </view>
+</view>
+<view class='br'></view>
+<view class='title'>
+<view class='title_time'>时间</view>
+<view class='title_pos'>地点和跟踪进度</view>
+</view>
+<scroll-view class='info' scroll-y="true">
+  <block wx:for="{{wuliu.mes}}" wx:key="index">
+    <view class='day_time'>
+      <view class='{{0==index?"day0":"day"}}'>{{item.day}}</view>
+      <view class='{{0==index?"time0":"time"}}'>{{item.time}}</view>
+    </view>
+    <view class='mesinfo'>
+      <view class='icon {{0==index?"in":"no_in"}}'></view>
+      <view class='{{0==index?"logistics_centent0":"logistics_centent"}}'>
+        {{item.mes}}
+      </view>
+      <view class='on'></view>
+    </view>
+  </block>
+</scroll-view>

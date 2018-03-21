@@ -1,0 +1,49 @@
+
+<view class='daifukuan-neirong'>
+  <navigator url="">
+     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
+        </view>  
+     </view>
+  </navigator>
+  
+    <navigator url="">
+     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
+        </view>  
+     </view>
+  </navigator>
+
+    <navigator url="">
+     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
+        </view>  
+     </view>
+  </navigator>
+
+
+    <navigator url="">
+     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+        <view class='daifukuan-zhu-hearder'>
+            <view class='iconfont icon-daifukuan'></view> 
+            <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
+            <view class='iconfont icon-jiantou'></view>
+            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
+        </view>  
+     </view>
+  </navigator>
+
+  
+</view>

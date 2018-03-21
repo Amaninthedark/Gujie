@@ -1,0 +1,116 @@
+/* pages/order/order_wl.wxss */
+.top{
+  display: flex;
+}  
+.top image{
+  width: 100rpx;
+  height: 100rpx;
+  margin: 20rpx 40rpx 20rpx 50rpx;
+}  
+.logistics{    
+  margin: 19rpx 0rpx;
+  font-size: 28rpx;  
+}  
+.br{  
+  width: 100%;  
+  margin-top: 30rpx; 
+  margin-bottom: 30rpx;  
+  background: #E5E5E5;  
+  height: 10rpx;  
+}  
+.info{
+   display: flex;
+   margin-top: 30rpx;
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+.day_time{
+
+   width: 20%; 
+}
+.day{
+   display: flex;
+  justify-content:flex-end; 
+  color: #BABABA;
+  font-size: 25rpx;
+}
+.day0{
+   display: flex;
+  justify-content:flex-end; 
+  color: blue;
+  font-size: 25rpx;
+}
+.time{
+   display: flex;
+  justify-content:flex-end; 
+  color: #BABABA;
+  font-size: 20rpx;
+}
+.time0{
+   display: flex;
+  justify-content:flex-end; 
+  color: blue;
+  font-size: 20rpx;
+}
+.mesinfo{
+  margin-top: -60rpx;
+}
+.title{
+  display: flex;
+  margin-bottom: 25rpx;
+}
+.title_time{
+  width: 30%;
+  text-align: center;
+  font-size: 30rpx;
+}
+.title_pos{
+  width: 70%;
+  text-align: center;
+  font-size: 30rpx;
+}
+/* 下部分 */  
+.logistics_centent{  
+  position: absolute;
+  padding-top:20rpx;   
+  left: 230rpx;  
+  font-size: 28rpx;  
+  color: #666  
+}  
+.logistics_centent0{  
+  position: absolute;
+  padding-top:20rpx;   
+  left: 230rpx;  
+  font-size: 28rpx;  
+  color: blue;
+}  
+.icon{  
+  width: 20rpx;  
+  height: 20rpx;  
+  background: white;  
+  border-radius: 50%;  
+  position: relative;
+  display: inline-block;  
+  margin:5rpx 20rpx 0rpx 190rpx;  
+}  
+.in{  
+  border: 1rpx solid blue;  
+  animation: my_animation 2s infinite;  
+}  
+@keyframes my_animation{  
+    100% {    
+    transform: scale(1.5);    
+    background-color: transparent;    
+    }    
+}  
+  
+.no_in{  
+  border: 1rpx solid #d0d0d0;  
+}  
+.on{  
+  background: #d0d0d0;  
+  height: 100rpx;  
+  width: 1px;  
+  margin-left: 200rpx;  
+}  

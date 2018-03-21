@@ -2,7 +2,27 @@
   
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/team/team",
+    "pages/Personaldetails/Personaldetails",
+    "pages/detail/detail",
+    "pages/mall/mall",
+      "pages/wode/wode",
+      "pages/zaixiangongdi/jindian",
+      "pages/jingdiananlie/jingdiananlie",
+      "pages/shangcheng/shangcheng",
+      "pages/gouwuche/gouwuche",
+      "pages/lianxiwmen/lianxiwmen",
+      "pages/dizhiguanli/dizhiguanli",
+      "pages/youhuiquan/youhuiquan",
+      "pages/wdeshoucang/wdeshoucang",
+      "pages/dai/shouhou",
+      "pages/dai/daishouhuo",
+      "pages/dai/daifahuo",
+      "pages/dai/wdedingdan",
+      "pages/dai/daifukuang",
+      "pages/kefuhuihua/kefuhuihua",
+      "pages/yuyue/yuyue"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,7 +30,7 @@
     "navigationBarTitleText": "古杰装饰",
     "navigationBarTextStyle":"black"
   },
-      "tabBar": {
+      "tabBar": { 
    
         "list": [
           {
@@ -20,26 +40,26 @@
           },
           {
             "iconPath": "images/旗子.png",
-            "pagePath": "pages/logs/logs",
+            "pagePath": "pages/team/team",
             "text": "团队"
-          },
-          {
+          },  
+          { 
             "iconPath": "images/文档.png",
-            "pagePath": "pages/logs/logs",
+            "pagePath": "pages/jingdiananlie/jingdiananlie",
             "text": "案例"
-          },
+          },  
           {
             "iconPath": "images/购物车.png",
-            "pagePath": "pages/logs/logs",
+            "pagePath": "pages/mall/mall",
             "text": "商城"
-          },
+          }, 
           {
             "iconPath": "images/我的.png",
-            "pagePath": "pages/logs/logs",
-            "text": "我的"
-          }
-        ]
-      },
+            "pagePath": "pages/wode/wode",
+            "text": "我的" 
+          } 
+        ] 
+      }, 
       "networkTimeout": {
         "request": 10000,
         "downloadFile": 10000

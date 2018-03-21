@@ -1,0 +1,6 @@
+.kefuhuihua { background-color: white;  width: 100%;  position: fixed;  bottom: 0rpx;  display: flex;  flex-direction: row;  
+  /* flex-direction 容器内项目的排列方向(默认横向排列) */
+}    
+.kefuhuihua input { margin-left: 10rpx; border-radius: 20rpx;  width: 80%; height: 40px;  background-color: white;  line-height: 40px;  font-size: 14px;  border: 1px solid #d0d0d0;  padding-left: 10px;  }   
+.xiaolian{  border: 1px solid white;  width: 12%;  height: 42px;  background: #fff;  color: #000;  line-height: 40px;  font-size: 14px;margin-left: 10rpx;}  
+.jia {  border: 1px solid white;  width: 12%;  height: 42px;  background: #fff;  color: #000;  line-height: 40px;  font-size: 14px}  

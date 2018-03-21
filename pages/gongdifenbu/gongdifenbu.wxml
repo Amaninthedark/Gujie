@@ -1,0 +1,45 @@
+<view>
+
+<view class='top'>
+    <view class='top1'>
+        <image src='../../images/logo.jpg' id='img'></image>
+        <view class='top1-left'>
+            <view  class='top1-text1'>
+              <text>古杰装饰设计有限公司</text>
+            </view>
+            
+            <view  class='top1-text2'>
+                <text>已服务1818位业主</text>
+            </view>
+        </view>
+ 
+        <view class='top1-right'>
+          <button>
+            免费咨询
+          </button>
+        </view>
+    </view>
+ 
+
+    <view class='top2' >
+    
+        <image src='../../images/zuji.png'  class='top2-image' ></image>    
+        <image src='../../images/touxiang1.jpeg' class='top2-image1' ></image>
+        <image src='../../images/touxiang2.jpeg' class='top2-image1' ></image>
+        <image src='../../images/touxiang3.jpg' class='top2-image1' ></image>
+        <image src='../../images/touxiang4.jpeg' class='top2-image1' ></image>
+        <view>
+        <text>等991位好友</text>
+        </view>
+       
+       
+    </view>
+</view>
+
+ <view class='map1' >  
+      <view class='map' >
+           {{res.longitude}}
+           <map id="map" longitude="{{yy}}" latitude="{{xx}}" scale="16" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height:{{second_height}}px;"></map> 
+      </view>
+</view>
+</view>  

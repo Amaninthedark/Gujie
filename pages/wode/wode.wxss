@@ -1,0 +1,144 @@
+page{
+  background: #F7F7F7;
+}
+.kuang{
+  margin-top:20rpx;
+}
+.biankuang{
+  border-bottom:#EDEDED solid 1px; 
+  width: 680rpx;
+  height: 70rpx;
+  margin-left: 45rpx;
+}
+.bg{
+  background: #FAFAFA;
+  
+}
+.container{
+  color: black;
+  background: #FA8072;
+   border-bottom:#FAEBD7 solid 3px; 
+   border-right: #FAEBD7 solid 3px; 
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-left: 35rpx;
+  width: 90%;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: white;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.shou1{
+  
+  float: right;
+  width: 97%;
+  height:70rpx;
+ 
+}
+.shou1 .iconfont{
+  margin-top: 25rpx;
+  /* margin-left: 20rpx; */
+  width: 50rpx;
+  height: 50rpx;
+  float: left; 
+}
+.shou-dingdan,.shou1-dingdan{
+  margin-top: 15rpx;
+  float: left;
+  font-size: 30rpx;
+  color: #424242; 
+}
+.shou{
+  border: 0px;
+  float: right;
+  width: 97%;
+  height:70rpx;
+
+}
+.shou .iconfont{
+  margin-top: 25rpx;
+  /* margin-left: 20rpx; */
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.soujin1{
+  width: 100%;
+  height:70rpx;
+    background: white;
+    margin-top:15rpx;
+}
+
+.soujin{
+  width: 100%;
+  height:70rpx;
+
+  background: white;
+}
+
+
+
+.main-dai{
+     display: flex ;
+    width: 100%;
+    box-sizing: border-box;
+color: #424242;
+ font-size: 13px;
+  height: 150rpx;
+    background: white;
+}
+.main-dai1{
+    width: 25%;
+    height: 155rpx;
+    padding-top: 20rpx;
+    text-align: center;
+    
+}
+.main-dai1 .iconfont{
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 auto;
+     background: white;
+   
+    font-size: 70rpx;
+   color: #FFD39B;
+}
+.main-dai2 .iconfont{
+    width: 70rpx;
+    height: 70rpx;
+    margin: 0 auto;
+    background: white;
+   
+    font-size: 60rpx;
+    color:#FFD39B;
+}
+
+ .main-dai2{ 
+  width: 25%;
+    height: 155rpx;
+    padding-top: 20rpx;
+    text-align: center;
+  }
+.main-dai3{
+  width: 25%;
+    height: 155rpx;
+    padding-top: 35rpx;
+    text-align: center;
+} 

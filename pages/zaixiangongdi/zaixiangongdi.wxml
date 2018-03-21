@@ -1,0 +1,75 @@
+<view class="container1">
+	<view class="filter-flex" >
+		<view class="filter-tab">
+			<text bindtap="setFilterPanel" data-findex="1" class="{{showfilterindex==1?'active':''}}">装修价格</text>
+			<text bindtap="setFilterPanel" data-findex="2" class="{{showfilterindex==2?'active':''}}">装修面积</text>
+      <text bindtap="setFilterPanel" data-findex="3" class="{{showfilterindex==3?'active':''}}">装修风格</text>
+			<text bindtap="setFilterPanel" data-findex="4" class="{{showfilterindex==4?'active':''}}">附近工地</text>
+  
+		</view> 
+		<view class="filter-content" wx:if="{{showfilter}}">
+			<view class="filter-panel" wx:if="{{showfilterindex==1}}">
+				<view class="filter-panel-left"> 
+					<view wx:for="{{filterdata.cate}}" wx:key="{{item.id}}" bindtap="setCateIndex" data-cateindex="{{index}}" data-cateid="{{item.id}}" class="ziti  {{cateindex==index?'active':''}}" ><text decode="{{true}}" >&nbsp;&nbsp;</text>{{item.name}}</view>
+				</view>  
+			</view> 
+      <view class="filter-panel" wx:if="{{showfilterindex==2}}">
+				<view class="filter-panel-left">  
+					<view wx:for="{{filterdata.area}}" wx:key="{{item.id}}" bindtap="setCateIndex" data-cateindex="{{index}}" data-cateid="{{item.id}}" class="ziti  {{cateindex==index?'active':''}}" ><text decode="{{true}}" >&nbsp;&nbsp;</text>{{item.name}}</view>
+				</view>  
+			</view> 
+      <view class="filter-panel" wx:if="{{showfilterindex==3}}">
+				<view class="filter-panel-left"> 
+					<view wx:for="{{filterdata.fengge}}" wx:key="{{item.id}}" bindtap="setCateIndex" data-cateindex="{{index}}" data-cateid="{{item.id}}" class="ziti  {{cateindex==index?'active':''}}" ><text decode="{{true}}" >&nbsp;&nbsp;</text>{{item.name}}</view>
+				</view>  
+			</view> 
+      <view class="filter-panel" wx:if="{{showfilterindex==4}}">
+				<view class="filter-panel-left"> 
+					<view wx:for="{{filterdata.gongdi}}" wx:key="{{item.id}}" bindtap="setCateIndex" data-cateindex="{{index}}" data-cateid="{{item.id}}" class="ziti  {{cateindex==index?'active':''}}" ><text decode="{{true}}" >&nbsp;&nbsp;</text>{{item.name}}</view>
+				</view>  
+			</view> 
+    </view>
+ 
+
+
+ 
+ 
+
+		 <view class="filter-shadow" wx:if="{{showfilter}}" bindtap="hideFilter"></view>  <!-- 关闭筛选 -->
+	</view>
+	<scroll-view style='overflow: hidden;height:610rpx' class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+<view wx:for="{{abcc}}" wx:for-item="i" > 
+  
+     <view class='scroll-view-main '>
+        <view class='scroll-view-main-left'><image src='../../images/banner_02.jpg'></image></view>
+        <view class='scroll-view-main-right'>
+           <view class='scroll-view-main-right-1'>瞬江花园2#01</view>
+           <view class='scroll-view-main-right-2'>本案结合业主喜好，以简约的线条和大神大神</view>
+           <view class='scroll-view-main-right-bottom'> 
+              <view class='scroll-view-main-right-bottom1'><view class='iconfont icon-zan1'> 1 </view></view>
+              <view class='scroll-view-main-right-bottom2'><view class='iconfont icon-liuyan'> 0</view></view>
+              <view class='scroll-view-main-right-bottom3'><view class='iconfont icon-wodeshoucang'><text>收藏</text> </view></view>
+           </view> 
+        </view>  
+     </view> 
+     
+</view>  
+  </scroll-view> 
+  
+
+<view class='map1' > 
+  
+        <view class='shou'>
+        <view  class='heitiao'><image src='../../images/heitiao.png'></image></view>
+        <view class='shou-dingdan'>工地参观<text> (46个工地装修中)</text></view>   
+          <navigator class='soujin1'   url="../ditu/ditu">  
+             <view style='float: right;' class='iconfont icon-jiantou' ></view>
+             <text class='quanping'>全屏</text>
+          </navigator> 
+        </view> 
+       <view class='map' >
+           <map id="myMap" show-location/>
+       
+       </view>
+</view>
+</view> 

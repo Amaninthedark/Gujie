@@ -1,0 +1,142 @@
+page{
+  background: #F7F7F7;
+}
+.daifukuan{
+  padding-top: 10rpx;
+  width: 100%;
+  height: 60rpx;
+  background-color: #e6e6e6;
+  font-size: 35rpx;
+  text-align: center;
+}
+.daifukuan .iconfont{
+  color: #F7F7F7;
+  margin-left: 39%;
+  margin-top: 10rpx; 
+  float: left;
+}
+.daifukuan text{
+  margin-top: 5rpx;
+  font-size: 30rpx;
+  margin-right: 41%;  
+  float: right;
+}
+.daifukuan-neirong{
+  height: 600rpx; 
+  margin-top: 20rpx;
+  width: 100%;
+  }
+.daifukuan-zhu{
+  width: 100%;
+  height: 275rpx;
+  margin-top: 15rpx;
+  border-bottom: 3px solid #F4F4F4;
+}
+.daifukuan-zhu-hearder{
+  background-color:white; 
+  width: 100%;
+  height: 60rpx;
+}
+.daifukuan-zhu-hearder .iconfont{
+  float: left;
+  padding: 15rpx 10rpx 10rpx 10rpx;
+}
+.daifukuan-zhu-hearder-wenzi{
+  margin-top: 15rpx;
+  float: left;
+  width: 20%;
+  font-size: 22rpx;
+}
+.daifukuan-zhu-hearder-right{
+  margin-right: 20rpx;
+    margin-top: 15rpx;
+  float: right;
+  font-size: 22rpx;
+  color: #FFA54F;
+}
+.daifukuan-zhu-mu{
+  width: 100%;
+  height: 155rpx;
+  background-color: #FCFCFC;
+  
+}
+.daifukuan-zhu-mu-left{
+  height: 120rpx;
+  width: 15.5%;
+  float: left;
+  margin: 10rpx 10rpx 10rpx 10rpx;   
+}
+.daifukuan-zhu-mu-left image{
+  width: 115rpx;
+  height: 120rpx;
+}
+.daifukuan-zhu-mu-right{
+  height: 150rpx;
+  width: 80%;
+  float: left;
+   
+}
+.daifukuan-zhu-mu-right-left{
+  margin-top: 10rpx;
+  width: 100%;
+  height: 50rpx;  
+  font-size: 20rpx;
+  float: left;
+}
+.daifukuan-zhu-mu-right-right{
+  float: left;
+  width: 70%;
+  height: 40rpx;  
+  font-size: 20rpx;
+  color:#999999; 
+}
+.daifukuan-zhu-mu-right-anniu{
+
+  float: right;
+  background-color: #fff;
+  width: 130rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  border:#999999 solid 1px;
+  border-radius:40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.daifukuan-zhu-mu-right-anniu1{
+    float: right;
+  background-color: #fff;
+  width: 130rpx;
+  height: 40rpx;
+  font-size: 20rpx;
+  border:#999999 solid 1px;
+  border-radius:40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.daifukuan-zhu-mu-right-anniu0{
+  margin-top: 30rpx;
+  height:50rpx;
+}
+.mu-right{
+   width: 80%;
+  float: left;
+}
+.mu-left{ 
+  height: 80rpx;
+  width: 19%;
+  float: left;
+}
+.daifukuan-zhu-mu-right-anniu0 .iconfont{
+  margin-top: 8rpx;
+  margin-left: 3rpx;
+  float: left;   
+}
+.daifukuan-zhu-mu-right-anniu0 text{
+  width: 68%;
+  margin-top: 10rpx;
+  float: right;
+  font-size: 25rpx;  
+}/* pages/dai/wdedingdan.wxss */

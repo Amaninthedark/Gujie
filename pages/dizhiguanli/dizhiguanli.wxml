@@ -1,0 +1,39 @@
+<view class='dizhiguanli'>  
+   <view class='dizhiguanli-header'>
+      <view class='dizhiguanli-header-left'>张三</view>
+      <view class='dizhiguanli-header-right'>17857502323</view>
+   </view>
+   <view class='dizhiguanli-main'>浙江省绍兴市越城区群贤中路2799号</view>
+   <view class='dizhiguanli-bottom'>
+     <checkbox value="默认地址" checked='{{fuxuankuan}}' bindtap='checkedchangge' /><text>默认地址</text>
+   </view>
+   <view class='hui'></view>
+</view>
+
+<view class='dizhiguanli'>  
+   <view class='dizhiguanli-header'>
+      <view class='dizhiguanli-header-left'>张三</view>
+      <view class='dizhiguanli-header-right'>17857502323</view>
+   </view>
+   <view class='dizhiguanli-main'>浙江省绍兴市越城区群贤中路2799号</view>
+   <view class='dizhiguanli-bottom'>
+     <checkbox value="默认地址" checked='{{fuxuankuan}}' bindtap='checkedchangge' /><text>默认地址</text>
+   </view>
+   <view class='hui'></view>
+</view>
+
+
+<view class='dizhiguanli'>  
+   <view class='dizhiguanli-header'>
+      <view class='dizhiguanli-header-left'>张三</view>
+      <view class='dizhiguanli-header-right'>17857502323</view>
+   </view>
+   <view class='dizhiguanli-main'>浙江省绍兴市越城区群贤中路2799号</view>
+   <view class='dizhiguanli-bottom'>
+     <checkbox value="默认地址" checked='{{fuxuankuan}}' bindtap='checkedchangge' /><text>默认地址</text>
+   </view>
+   <!-- <view class='hui'></view> -->
+</view>
+
+
+

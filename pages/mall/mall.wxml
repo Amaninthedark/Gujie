@@ -1,0 +1,79 @@
+<view class='section'>
+  <view class="search">
+    <input placeholder='搜索古杰商城'></input>
+  </view>
+  <view class='mall-bottom'>
+    <!-- 左侧类型 -->
+    <view class="left">
+      <view  bindtap="Select" data-typeid="{{item.id}}" class="{{currentId==item.id?'clickSel':''}}" wx:for="{{classify}}">
+      {{item.name}}
+      </view>
+    </view>
+
+    <view class="right">
+      <view class="tabTit">
+        <view class="flex1" bindtap='sort_num_click'>
+          <text >销量</text>
+          <view class='fs-up'>
+            <span class='iconfont icon-triangle-top '  style="color:{{sort_num_topcolor}};"></span>
+            <span class='iconfont icon-triangle-bottom' style="color:{{sort_num_bottomcolor}};"></span>
+          </view>
+        </view>
+        <view class="flex1" bindtap='sort_price_click'>
+          <text>价格</text>
+          <view class='fs-up'>
+            <span class='iconfont icon-triangle-top' style="color:{{sort_price_topcolor}};"></span>
+            <span class='iconfont icon-triangle-bottom' style="color:{{sort_price_bottomcolor}};"></span>
+          </view>
+        </view>
+        <view class="flex1" bindtap='sort_judge_click'>
+          <text>评价</text>
+          <view class='fs-up'>
+            <span class='iconfont icon-triangle-top' style="color:{{sort_judge_topcolor}};"></span>
+            <span class='iconfont icon-triangle-bottom' style="color:{{sort_judge_bottomcolor}};"></span>
+          </view>
+
+        </view>
+      </view>
+      <scroll-view class="mall-list" scroll-y="true">
+        <view wx:for="{{goods}}">
+
+          <view class="ping" data-pro_id="1">
+
+       
+            <view class="ping_b">
+             <navigator url="../detail/detail"       hover-class="navigator-hover">
+              <image src="{{item.pic}}">
+              </image>
+                </navigator>
+            </view>
+       
+                
+            <view class="ping_a">
+             <navigator url="../detail/detail"       hover-class="navigator-hover">
+              <view class="ping_aa">{{item.name}}</view>
+              <view class='ping_num'>
+                <view class="ping_cc">已售：{{item.solded}}</view>
+                <view class="ping_dd">库存：{{item.stock}}</view>
+              </view>
+            </navigator>
+              <view class="padding_sp">
+                <view class="ping_ee">￥{{item.price}}</view>
+                <view class='iconfont .icon-jian'  bindtap='goods_sub' data-index="{{index}}"></view>
+                
+                
+                <view >{{item.num}}</view>
+                <view class='iconfont .icon-jia' bindtap='goods_add' data-index="{{index}}"></view>                
+              </view>
+            </view>
+          </view>
+     
+        </view>
+      
+      </scroll-view>
+    </view>
+  </view>
+  <view class='cart'>
+  <span class="iconfont icon-gouwuchekong"></span>
+  </view>
+</view>

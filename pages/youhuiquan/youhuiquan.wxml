@@ -1,0 +1,27 @@
+<view class='youhuiquan'>
+   <view class='youhuiquan-hearder'>
+      <view class='iconfont icon-youhuiquan'></view>
+      <view class='youhuiquan-hearder-wenzi-left'>券</view>
+      <view class='youhuiquan-hearder-wenzi-right'>2张</view>
+   </view>
+   <view class='youhuiquan-main'>
+       <view class='youhuiquan-main-left'>
+          <view  class='iconfont icon-xingxing'></view>
+          <view class='youhuiquan-main-left1'>优酷vip会员28元会员</view> 
+       </view>
+       <view class='youhuiquan-main-right'>
+         <text>券</text>
+       </view>
+   </view>
+
+   <view class='youhuiquan-main'>
+       <view class='youhuiquan-main-left'>
+          <view  class='iconfont icon-xingxing'></view>
+          <view class='youhuiquan-main-left1'>优酷vip会员28元会员</view> 
+       </view>
+       <view class='youhuiquan-main-right'>
+         <text>券</text>
+       </view>
+   </view>
+</view>
+

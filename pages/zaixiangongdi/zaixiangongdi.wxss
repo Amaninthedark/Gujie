@@ -1,16 +1,241 @@
-/**app.wxss**/
+.filter-tab{
+
+	display: flex;
+	width: 100%;
+	line-height: 100rpx; 
+	border-bottom: 1rpx solid #ddd;
+	position: relative;
+	z-index: 5;
+	background: #fff;
+}
+.filter-tab text{
+  font-size: 30rpx;
+	flex: 1;
+	text-align: center;
+}
+.filter-tab text:after{
+	content: '';
+	display: inline-block;
+	vertical-align: 4rpx;
+	width: 0; 
+	height: 0;
+	border-left: 12rpx solid transparent;
+	border-right: 12rpx solid transparent;
+	border-top: 12rpx solid #bbb;
+	margin-left: 8rpx;
+}
+.filter-tab text.active{
+  /* font-size: 25rpx; */
+	color: #3399FF;
+}
+.filter-tab:not(.sort-tab) text.active:after{
+  /* font-size: 25rpx; */
+	border-top: 0;
+	border-bottom: 12rpx solid #3399FF;
+}
+.filter-tab.sort-tab text.active:after{
+  /* font-size: 25rpx; */
+	border-top: 12rpx solid #3399FF;
+}
+.filter-panel{
+	display: flex;
+	background: #fff;
+	position: absolute;
+	width: 100%;
+	z-index: 13;
+	overflow: hidden;
+}
+.filter-panel-left,.filter-panel-right{
+	flex: 1;
+	line-height: 80rpx;
+	max-height: 480rpx;
+	overflow-y: auto;
+}
+.filter-panel-left .active{
+  /* font-size: 25rpx; */
+	background: #e6e6e6;
+}
+.filter-panel-right .active{
+  /* font-size: 25rpx; */
+	color: #3399FF;
+}
+.filter-panel-right{
+	background: #fff;
+}
+.filter-panel-right:empty{
+	display: none;
+}
+.filter-shadow{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 1;
+	background: rgba(0,0,0,.5);
+}
+.gototop{
+	position: fixed;
+	bottom: 20rpx;
+	right: 20rpx;
+	transition: all 0.3s;
+	opacity: 0;
+	transform: translateY(200rpx) rotate(180deg);
+}
+.gototop.active{
+	opacity: 0.7;
+	transform: translateY(0) rotate(180deg);
+}
+.test-item{
+	padding: 20rpx;
+	border-bottom: 1rpx solid #ddd;
+}
 
 
+.scroll-view-main{
+  padding-bottom: 30rpx;
+  margin-top: 100rpx;
+  margin: auto;
+  height: 200rpx;
+  width: 95%;
+}
+.scroll-view-main-left{
+  width:42%;
+  float: left;
+  height: 200rpx;
+  overflow: hidden;
+}
+.scroll-view-main-left images{
+  width: 100%;
+  height: 100%;
+}
+.scroll-view-main-right{
+  width: 55%;
+  float: right;
+  height: 200rpx;
+}
+.scroll-view-main-right-1{
+  width: 100%;
+  height: 30rpx;
+  font-size: 35rpx;
+}
+.scroll-view-main-right-2{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 35rpx;
+  overflow:hidden; 
+  text-overflow:ellipsis;
+  white-space:nowrap;
+   font-size: 25rpx;
+}
+.scroll-view-main-right-bottom{
+  margin-top: 57rpx;
+  height: 50rpx;
+  width: 100%;
+}
+.scroll-view-main-right-bottom1{
+    width: 30%;
+  float: left;
+}
+.scroll-view-main-right-bottom2{
+  width: 30%;
+   float: left;
 
+}
+.scroll-view-main-right-bottom3{
 
+    width: 30%; 
+   float: left;
+}
+.scroll-view-main-right-bottom3 text{
 
+  font-size: 35rpx;
+}
+.ziti{
+  font-size: 30rpx;
+}
+.shou1{
+  
+  float: right;
+  width: 97%;
+  height:80rpx;
+  border-bottom: #e6e6e6 solid 1px;
+}
+.shou1 .iconfont{
+  margin-top: 25rpx;
+  /* margin-left: 20rpx; */
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+}
+.shou-dingdan,.shou1-dingdan{
+  margin-top: 15rpx;
+  float: left;
+  font-size: 35rpx;
+  margin-left: 20rpx;
+}
+.shou-dingdan text{
+  color: #A6A6A6;
+}
+.shou{
+  
+  float: right;
+  width: 100%;
+  height:80rpx;
+}
+.shou .iconfont{
+  margin-top: 25rpx;
+  /* margin-left: 20rpx; */
+  
+  height: 50rpx;
+  float: left;
+}
+.quanping{
+  float: right;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  color: #bbb;
 
+}
+.soujin1{
+  width: 100%;
+  height:80rpx;
+  border-top:#e6e6e6 solid 1px; 
+}
 
+.soujin{
+  width: 100%;
+  height:82rpx;
+}
+.heitiao{
+  float:left; 
+  width: 20rpx;
 
+}
+.heitiao image{
+  
+  width: 25rpx;
+  height: 45rpx;
+  margin-top: 8rpx;
+}
+ 
+.map{
+  bottom: 0rpx;
+  clear: both;
+  width: 100%;
 
+}
+.map map{
+  
+  width: 100%;
+  
+} 
+.map1{
+  width: 100%;
+  position: absolute;
+  bottom: 0rpx;
+}
 
-
-
+ 
 
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1521367871799'); /* IE9*/
@@ -19,7 +244,7 @@
   url('iconfont.ttf?t=1521367871799') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
   url('iconfont.svg?t=1521367871799#iconfont') format('svg'); /* iOS 4.1- */
 }
-
+ 
 .iconfont {
   font-family:"iconfont" !important;
   font-size:16px;
@@ -74,32 +299,3 @@
 
 .icon-xingxing:before { content: "\e81f"; }
 
-
-
-
-
-
-
-
-
-/* 购物车 */
-.gouwuche{
-  position: fixed;
-  bottom: 0rpx;
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction:column;
-}
-.gouwuche .iconfont{
-  color: red;
-  font-size:60rpx; 
-}
-.gouwuche text{
-   color: red;
-  font-size: 20rpx;
-}
-.gouwuche-dianji{
-  margin: auto;
-  width: 9%;
-}

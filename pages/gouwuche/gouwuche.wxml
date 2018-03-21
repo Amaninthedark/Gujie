@@ -1,0 +1,11 @@
+<view class='gouwu'>
+   <view class='iconfont icon-gouwuche1'></view>
+   <text>购物车是空的</text>
+   <button type="primary" > 马上逛逛 </button>
+</view>
+<view class='gouwuche' >
+  <view class='gouwuche-dianji'>
+     <navigator url=''><view class='iconfont icon-gouwuche2'></view></navigator> 
+     <text>购物车</text>
+  </view>
+</view>

@@ -1,0 +1,50 @@
+  <view class="detail">
+    <view class="content">
+      <view class="menu-container">
+        <scroll-view scroll-y="true" class="scroll-view" scroll-into-view="head-{{indexSize}}">
+          <view class="scroll-view-ul">   
+
+          <block wx:for="{{detail}}" wx:for-item="item" wx:key="index" id="head-{{index}}">
+              <view class="scroll-view-item {{indexSize === index?'active':''}}"   bindtap="scrollTo" data-index="{{index}}">{{item.title}}
+              </view>
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+
+      <swiper indicator-dots='true' class="detail-container" bindchange="change" data-index="{{index}}" current="{{indexSize}}"
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" duration="{{duration}}">
+        <swiper-item wx:for="{{detail}}" wx:for-item="item" wx:key="index">
+          <scroll-view scroll-y="true" class=" market-scroll-list">
+
+            <view class="title">{{detail[indexSize].title}} </view>
+       
+                <a wx:for="{{detail[indexSize].list}}" wx:key="index" wx:key="index" item="item"
+                  key="key">
+            
+                  <view class="inner" bindtap="tapName" data-title="{{item.title}}"  data-year="{{item.year}}">
+                    <view class="cover">
+                      <view class="cover-img" >
+                      <image src='{{item.img}}' ></image>
+                      </view> 
+                    </view> 
+          
+                    <view class="info overflow">
+                      <view class="info-title overflow">{{item.title}}</view>
+                      <view class="info-subtitle overflow">{{item.subtitle}}</view>
+                      <view class="info-desc overflow">从业{{item.year}}</view> 
+                    </view>
+                    <view class="num">
+                    
+                    </view>            
+                  </view>
+                
+                </a>
+
+          </scroll-view>
+        </swiper-item>
+
+      </swiper>
+
+    </view>
+  </view>

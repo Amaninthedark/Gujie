@@ -1,0 +1,50 @@
+.dizhiguanli{
+  margin-top: 20rpx;
+  height: 240rpx;
+  width: 100%;
+}
+.dizhiguanli-header{
+  height: 60rpx;
+  width: 100%;
+
+}
+.dizhiguanli-header-left{
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  float: left;
+  font-size: 28rpx;
+}
+.dizhiguanli-header-right{
+  float: right;
+  font-size: 28rpx;
+  margin-top: 10rpx;  
+  margin-right: 10rpx;
+}
+.dizhiguanli-main{
+  padding-top: 20rpx;
+  font-size: 27rpx;
+  width: 95%;
+  height: 80rpx;
+  margin: auto;
+  margin-left: 10rpx; 
+}
+.dizhiguanli-bottom{
+  padding-bottom: 13rpx;
+  border-top: #e6e6e6 solid 1rpx;
+  border-bottom:  #e6e6e6 solid 1rpx;
+  padding-left: 10rpx;
+  width: 100%;
+  height: 50rpx; 
+}
+.dizhiguanli-bottom checkbox{
+  zoom: 65%;
+  font-size: 25rpx;
+}
+.dizhiguanli-bottom text{
+  font-size: 25rpx;
+}
+.hui{
+  width: 100%;
+  height: 15rpx;
+  background-color: #e6e6e6;
+}

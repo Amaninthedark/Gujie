@@ -1,0 +1,149 @@
+<view class="cont">
+  <swiper autoplay="true" duration="1000" indicator-dots="true" interval="3000" style="height:285px" current="2" current-item-id="">
+    <block wx:for="{{bannerItem}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="title">新中式家具客厅现代中式中国风印画沙发罗汉床设计师会所酒店家具</view>
+  <view class="title">
+  </view>
+  <view class="gmxx">
+    <view>
+      <view style="margin-top:4px;">
+        <span class="jiage">
+          ¥4583.00
+          <text class="yuan">定金：</text>
+          <text class='dingjin'>¥99.00</text>
+        </span>
+        <span class="c6 fl_r font_14" style="color:#ccc"> 库存：999 </span>
+      </view>
+    </view>
+    <view class="xian">
+    </view>
+    <view class="xian">
+    </view>
+    <view class="cu">
+      <text class="cu_one" style='margin-left:10rpx;'>促销 </text>
+      <view class="cu_a">送</view>
+      <text class="song">包装修</text>
+      <view class="cu_a">限</view>
+      <text class="song">限时折扣活动</text>
+      <view class="wu">
+      </view>
+    </view>
+    <view class="xian">
+    </view>
+    <view class="cu">
+      <text class="cu_one">服务</text>
+      <image class="fu_a" src="../../images/gou.png">
+      </image>
+      <text class="songa">官方唯一商城</text>
+      <image class="fu_a" src="../../images/gou.png">
+      </image>
+      <text class="songs">全国联保</text>
+      <image class="fu_a" src="../../images/gou.png">
+      </image>
+      <text class="songs">全场包邮</text>
+    </view>
+    <view class="fenge">
+    </view>
+    <view class="xian">
+    </view>
+    <view class="yan">
+      <text class="yan_one" style='margin-left:20rpx;'>适合人数</text>
+      <view class="yan_de">
+        <text class="ys" data-attr_id="1">组合</text>
+      </view>
+    </view>
+    <view class="xian">
+    </view>
+    <view class="yan">
+      <text class="yan_one" style='margin-left:20rpx;'>颜色分类</text>
+      <view class="yan_de" wx:for="{{colorfenlei}}">
+        <text class="{{num==item.id?'ys':'yan_a'}}" bindtap='changPro' data-spec_id="{{index}}">{{item.name}}</text>
+      </view>
+    </view>
+    <view class="xian">
+    </view>
+    <view class="shu">
+      <text class="cun">数量</text>
+      <view class="dian">
+        <view class="stepper">
+          <text class="" data-alpha-beta="0" bindtap='goods_sub'>-</text>
+          <view class="nownum">{{num2}}</view>
+          <text class="normal" data-alpha-beta="1" bindtap='goods_add'>+</text>
+        </view>
+      </view>
+      <text class="gous"></text>
+    </view>
+    <view class="fenge">
+    </view>
+  </view>
+</view>
+<view class="goods-navigator" bindtap="tabGoods">
+  <navigator class="goods-nav {{tabArr.curHdIndex=='0'? 'active' : ''}}" data-id="0">图文详情</navigator>
+  <navigator class="goods-nav {{tabArr.curHdIndex=='1'? 'active' : ''}}" data-id="1">产品信息</navigator>
+  <navigator class="goods-nav {{tabArr.curHdIndex=='2'? 'active' : ''}}" data-id="2">宝贝评价</navigator>
+</view>
+<view class="goods-info {{tabArr.curBdIndex=='0'? 'active' : ''}}">
+  <view>
+    <image class="goods-info-img" mode="widthFix" src="https://g-search1.alicdn.com/img/bao/uploaded/i4/imgextra/i2/29739164/TB2KZBffv2H8KJjy1zkXXXr7pXa_!!0-saturn_solar.jpg_580x580Q90.jpg_.webp" style="height: 0px;"></image>
+  </view>
+  <view>
+    <image class="goods-info-img" mode="widthFix" src="https://g-search3.alicdn.com/img/bao/uploaded/i4/i4/3416520479/TB1YUopic2vU1JjSZFwXXX2cpXa_!!0-item_pic.jpg_580x580Q90.jpg_.webp" style="height: 0px;"></image>
+  </view>
+
+</view>
+<view class="goods-detail {{tabArr.curBdIndex=='1'? 'active' : ''}}">
+  <view class="row goods-detail-list">
+    <view class="goods-detail-lf">类型</view>
+    <view class="goods-detail-rt">客厅</view>
+  </view>
+  <view class="row goods-detail-list">
+    <view class="goods-detail-lf">风格</view>
+    <view class="goods-detail-rt">新中式</view>
+  </view>
+</view>
+<view class="goods-comment  {{tabArr.curBdIndex=='2'? 'active' : ''}}" style="background:#fff;">
+  <view class="comment-list">
+    <view class="comment-lf">
+      <image class="comment-favion" src="../../images/pinfen.png"></image>
+    </view>
+    <view class="comment-mid">
+      <view style="padding-left:8px;">古杰商城</view>
+      <view class="star-status" style="padding-left:8px;">
+      </view>
+      <view style="padding-left:8px;">好好</view>
+    </view>
+    <view class="comment-rt">2018-03-17 10:47:20</view>
+    <view style="clear:both"></view>
+
+  </view>
+
+</view>
+
+<view class="footfixed">
+  <view class="footfixed">
+    <view class="zuo">
+      <view class="zuo_a">
+        <view class="zuo_a">
+          <span class="iconfont .icon-shoucang"> </span>
+          <view class="dbtext">商品收藏</view>
+        </view>
+
+      </view>
+      <view class="zuo_b">
+        <view>
+          <span class="iconfont .icon-gouwuche"> </span>
+          <view class="dbtext">购物车</view>
+        </view>
+      </view>
+    </view>
+    <view class="right">
+      <view class="right_a" data-type="addcart">加入购物车</view>
+      <view class="right_b" data-status="1" data-type="buynow">立刻购买</view>
+    </view>
+  </view>
+</view>

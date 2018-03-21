@@ -1,0 +1,20 @@
+<view class="yuyue-tupian">
+   <image src="../images/navli5.png"></image>  
+</view>
+<view class="yuyue-tupian-bottom">古杰装饰设计有限公司</view>
+<view class="yuyue-name">
+   <view class="yuyue-text">您的姓名</view>
+   <input  type="text"  ></input>
+</view>
+<view class="yuyue-name">
+   <view class="yuyue-text">手机号码</view>
+   <input  type="text"  ></input>
+</view>
+<view class="yuyue-name-yanzheng">
+   <view class="yuyue-text">手机验证码</view>
+    <input  type="text"  ></input>
+    <view class="yuyue-anniu">获取验证码</view>
+</view>
+
+<button class="yuyue-tijiao">提交</button>
+<view class="yuyue-footer">为了您的权益和保障，您的所有信息将不会泄露给他人</view>
