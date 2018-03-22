@@ -40,23 +40,23 @@
 
           <view class="ping" data-pro_id="1">
 
-       
-            <view class="ping_b">
-             <navigator url="../detail/detail"       hover-class="navigator-hover">
+            
+            <view class="ping_b" bindtap="tapName">
+         
               <image src="{{item.pic}}">
               </image>
-                </navigator>
+               
             </view>
        
                 
             <view class="ping_a">
-             <navigator url="../detail/detail"       hover-class="navigator-hover">
-              <view class="ping_aa">{{item.name}}</view>
-              <view class='ping_num'>
+          
+              <view class="ping_aa" bindtap="tapName">{{item.name}}</view>
+              <view class='ping_num' bindtap="tapName">
                 <view class="ping_cc">已售：{{item.solded}}</view>
                 <view class="ping_dd">库存：{{item.stock}}</view>
               </view>
-            </navigator>
+            
               <view class="padding_sp">
                 <view class="ping_ee">￥{{item.price}}</view>
                 <view class='iconfont .icon-jian'  bindtap='goods_sub' data-index="{{index}}"></view>
@@ -73,7 +73,7 @@
       </scroll-view>
     </view>
   </view>
-  <view class='cart'>
+  <view class='cart' bindtap="Gwc">
   <span class="iconfont icon-gouwuchekong"></span>
   </view>
 </view>

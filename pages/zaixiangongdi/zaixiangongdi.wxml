@@ -40,11 +40,11 @@
 	<scroll-view style='overflow: hidden;height:610rpx' class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
 <view wx:for="{{abcc}}" wx:for-item="i" > 
   
-     <view class='scroll-view-main '>
-        <view class='scroll-view-main-left'><image src='../../images/banner_02.jpg'></image></view>
+     <view class='scroll-view-main ' >
+        <view class='scroll-view-main-left' bindtap="jingdiananlie"><image src='../../images/11.jpg'></image></view>
         <view class='scroll-view-main-right'>
-           <view class='scroll-view-main-right-1'>瞬江花园2#01</view>
-           <view class='scroll-view-main-right-2'>本案结合业主喜好，以简约的线条和大神大神</view>
+           <view class='scroll-view-main-right-1'bindtap="jingdiananlie">瞬江花园2#01</view>
+           <view class='scroll-view-main-right-2'bindtap="jingdiananlie">本案结合业主喜好，以简约的线条和大神大神</view>
            <view class='scroll-view-main-right-bottom'> 
               <view class='scroll-view-main-right-bottom1'><view class='iconfont icon-zan1'> 1 </view></view>
               <view class='scroll-view-main-right-bottom2'><view class='iconfont icon-liuyan'> 0</view></view>
@@ -58,10 +58,10 @@
   
 
 <view class='map1' > 
-  
+   
         <view class='shou'>
         <view  class='heitiao'><image src='../../images/heitiao.png'></image></view>
-        <view class='shou-dingdan'>工地参观<text> (46个工地装修中)</text></view>   
+        <view class='shou-dingdan' bindtap="gongdifenbu">工地参观<text> (46个工地装修中)</text></view>   
           <navigator class='soujin1'   url="../ditu/ditu">  
              <view style='float: right;' class='iconfont icon-jiantou' ></view>
              <text class='quanping'>全屏</text>

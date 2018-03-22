@@ -4,8 +4,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // img:['tu1.png', 'tu2.png', 'tu3.png', 'tu4.png', 'tu5.png', 'tu6.png', 'tu7.png'],
-    img:"tu7",
+    // img:['tu0.png','tu1.png', 'tu2.png', 'tu3.png', 'tu4.png', 'tu5.png', 'tu6.png', 'tu7.png'],
+    img:"tu0",
   },
 
   /**
@@ -61,5 +61,10 @@ Page({
    */
   onShareAppMessage: function () {
     
-  }
+  },
+  pinglun: function () {
+    wx.navigateTo({
+      url: '../pinglun/pinglun'
+    });
+  },
 })

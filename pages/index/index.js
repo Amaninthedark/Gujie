@@ -21,5 +21,25 @@ Page({
   },
   onLoad: function () {
     console.log('onLoad test');
-  }
+  },
+  kefu:function(){
+    wx.navigateTo({
+      url: '../kefuhuihua/kefuhuihua'
+    })
+  },
+  shangcheng: function () {
+    wx.switchTab({
+      url: '../mall/mall'
+    });
+  },
+  team: function () {
+    wx.switchTab({
+      url: '../team/team'
+    });
+  },
+  zaixiangongdi: function () {
+    wx.navigateTo({
+      url: '../zaixiangongdi/zaixiangongdi'
+    });
+  },
 })  

@@ -22,7 +22,11 @@
       "pages/dai/wdedingdan",
       "pages/dai/daifukuang",
       "pages/kefuhuihua/kefuhuihua",
-      "pages/yuyue/yuyue"
+      "pages/yuyue/yuyue",
+      "pages/logistics/logistics",
+      "pages/zaixiangongdi/zaixiangongdi",
+      "pages/gongdifenbu/gongdifenbu",
+      "pages/pinglun/pinglun"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -46,7 +50,7 @@
           },  
           { 
             "iconPath": "images/文档.png",
-            "pagePath": "pages/jingdiananlie/jingdiananlie",
+            "pagePath": "pages/zaixiangongdi/zaixiangongdi",
             "text": "案例"
           },  
           {

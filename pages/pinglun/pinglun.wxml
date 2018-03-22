@@ -1,0 +1,16 @@
+<view class='pinglun'>
+ <view class='pinglun-image'><image src='../../images/qw.jpg'> </image></view>
+  <view class="pinglun-right">
+      <view bindtap="starTap" data-index="{{index}}"  class="star" wx:for="{{userStars}}" wx:key="index">
+         <image src="{{item}}"></image>
+      </view>
+  </view>
+</view>
+<view class='huaxian'></view>
+<view class='changping'>
+
+  <textarea placeholder="对本产品或服务的看法,评论一下吧~" />
+</view>
+<view class='huaxian'></view>
+
+<view class='anniu'> 提交 </view>

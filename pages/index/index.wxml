@@ -20,13 +20,11 @@
   </view> 
 </view>
 <view class='index-conten'>
-    <view class='index-page'>
+    <view class='index-page'  >
    
       <view class='index-page-conten'>
       
         <view class='index-page-image'>
-      
-
           <image src="/images/4.jpg" ></image> 
         
         </view>
@@ -44,7 +42,14 @@
         预约量房
         </view>
       </view>
-      <view class='index-page-conten'>
+      
+      <view class='index-page-conten' >
+      <view class='contact-list' >
+        <contact-button type="default-light" size="27" session-from="weapp"></contact-button>  
+        <contact-button type="default-light" size="27" session-from="weapp"></contact-button>  
+        <contact-button type="default-light" size="27" session-from="weapp"></contact-button>  
+        <contact-button type="default-light" size="27" session-from="weapp"></contact-button> 
+      </view> 
         <view class='index-page-image'>
         <image src="/images/1.jpg" ></image> 
         </view> 
@@ -52,7 +57,7 @@
           免费咨询
         </view>
       </view>
-        <view class='index-page-conten'>
+        <view class='index-page-conten' bindtap="zaixiangongdi">
         <view class='index-page-image'>
           <image src="/images/2.jpg" ></image> 
         </view>
@@ -60,15 +65,15 @@
           在线工地
         </view>
       </view>
-        <view class='index-page-conten'>
+        <view class='index-page-conten'  bindtap="shangcheng">
         <view class='index-page-image'>
           <image src="/images/3.jpg" ></image> 
         </view>
-        <view class='index-page-text'>
+        <view class='index-page-text'  >
           古杰商城
         </view>
       </view>
-        <view class='index-page-conten'>
+        <view class='index-page-conten' bindtap="team">
         <view class='index-page-image'>
           <image src="/images/4.jpg" ></image> 
         </view>
@@ -76,7 +81,7 @@
           我的团队
         </view>
       </view>
-  
+
   </view>
     <view class='index-goods'>
         <view class='index-goods-title'>

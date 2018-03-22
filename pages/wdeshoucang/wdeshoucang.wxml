@@ -1,49 +1,105 @@
 
 <view class='daifukuan-neirong'>
-  <navigator url="">
-     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+
+          <view class='daifukuan-zhu1'>
         <view class='daifukuan-zhu-hearder'>
             <view class='iconfont icon-daifukuan'></view> 
             <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
             <view class='iconfont icon-jiantou'></view>
-            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
-        </view>  
+            <view class='daifukuan-zhu-hearder-right'>2017-12-2</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../../images/qw.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+            </view>
+        </view>
      </view>
-  </navigator>
-  
-    <navigator url="">
-     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+  <view class='daifukuan-zhu1'>
         <view class='daifukuan-zhu-hearder'>
             <view class='iconfont icon-daifukuan'></view> 
             <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
             <view class='iconfont icon-jiantou'></view>
-            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
-        </view>  
+            <view class='daifukuan-zhu-hearder-right'>2017-12-2</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../../images/likepro.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+            </view>
+        </view>
      </view>
-  </navigator>
 
-    <navigator url="">
-     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+             <view class='daifukuan-zhu1'>
         <view class='daifukuan-zhu-hearder'>
             <view class='iconfont icon-daifukuan'></view> 
             <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
             <view class='iconfont icon-jiantou'></view>
-            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
-        </view>  
+            <view class='daifukuan-zhu-hearder-right'>2017-12-2</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../../images/qw.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+            </view>
+        </view> 
      </view>
-  </navigator>
-
-
-    <navigator url="">
-     <view style='height:60rpx; margin-bottom:15rpx;' class='daifukuan-zhu'>
+  <view class='daifukuan-zhu1'>
         <view class='daifukuan-zhu-hearder'>
             <view class='iconfont icon-daifukuan'></view> 
             <view class='daifukuan-zhu-hearder-wenzi'>天之星fashion</view>
             <view class='iconfont icon-jiantou'></view>
-            <view class='daifukuan-zhu-hearder-right'>已收藏</view>
-        </view>  
+            <view class='daifukuan-zhu-hearder-right'>2017-12-2</view>
+        </view>
+        <view class='daifukuan-zhu-mu'>
+            <view class='daifukuan-zhu-mu-left'>
+               <image src='../../images/likepro.jpg'></image>
+            </view>
+            <view class='daifukuan-zhu-mu-right'>
+              <view class='mu-right'>
+                 <view class='daifukuan-zhu-mu-right-left'>创意拉S8重低音耳塞入耳式耳机电脑手机mp3通用线控耳塞带潮</view>
+                 <view class='daifukuan-zhu-mu-right-right'>套餐类型：官方标配；颜色分类：拉维斯S8=天空蓝+带麦+带音调键</view>
+              </view> 
+              <view class='mu-left'>
+                     <view class='daifukuan-zhu-mu-right-anniu0' >
+                        <view class='iconfont icon-qian'></view>
+                        <text>15000</text>
+                     </view> 
+              </view>
+            </view>
+        </view>
      </view>
-  </navigator>
-
-  
 </view>

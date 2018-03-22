@@ -99,14 +99,14 @@
   width: 95%;
 }
 .scroll-view-main-left{
-  width:42%;
+  width:300rpx;
   float: left;
   height: 200rpx;
   overflow: hidden;
 }
 .scroll-view-main-left images{
-  width: 100%;
-  height: 100%;
+  width: 300rpx;
+  height: 200rpx;
 }
 .scroll-view-main-right{
   width: 55%;

@@ -125,7 +125,16 @@ Page({
   },
   s:function(ev){
       
-  }
-
+  },
+  tapName: function (e) {
+    wx.navigateTo({
+      url: '../detail/detail'
+    })
+  },
+  Gwc: function (e) {
+    wx.navigateTo({
+      url: '../shangcheng/shangcheng'
+    })
+  },
 
 })

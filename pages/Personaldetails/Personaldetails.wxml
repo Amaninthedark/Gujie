@@ -11,7 +11,7 @@
   </view>
   <view class='personaldata'>
     <view class='personalyear'>
-      从业{{get_year}}
+      从业: {{get_year}}
     </view>
     <view class='personaltext-type'>
           擅长类型：现代,中式,新中式,欧式，美式
@@ -20,18 +20,18 @@
          <text>设计师理念:结合使用者及空间的设计,寻求空间特色的极致发挥，尊重使用者的真实需求,反应空间、反应使用者，生活即是设计，融入发现，就会产生不懂风格的精彩.</text> 
     </view>
   </view> 
-  <view  class='introduce'>
+</view>
+ <view  class='introduce'>
     <view class='introduce-title'>
         个人介绍: 
     </view>
     <view class='introduce-content'>
         毕业于杭州理工大学，双修艺术色彩搭配，熟练色彩搭配，善于材料应用。
     </view>
-  </view>
+ 
    
       <button >马上预约</button>
-  
-</view>
+    </view>
   <view class='design'>
       <view class='desing-title'>
         设计作品

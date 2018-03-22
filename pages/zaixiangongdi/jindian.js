@@ -1,4 +1,4 @@
-Page({
+age({
   data: {
     filterdata: {},  //筛选条件数据
     showfilter: false, //是否显示下拉筛选

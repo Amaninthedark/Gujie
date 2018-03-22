@@ -1,137 +1,187 @@
 .jingdiananlie-1{
   width: 100%;
-  height: 100rpx;
+  height: 70rpx;
 }
 .jingdiananlie-left{
-  font-size: 30rpx;
-  text-align: center;
-  background-color:#efb336; 
-  float: left;
-  margin-left: 10rpx;
-  margin-top: 20rpx;
-  width:80rpx;
-  height: 40rpx;
-  border-radius: 15rpx;
+  font-size:25rpx;
+background-color:#FF8E01;
+float:left;
+margin-left:20rpx;
+margin-top:20rpx;
+width:60rpx;
+height:40rpx;
+border-radius:10rpx;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
 }
 .jingdiananlie-right{
-  margin-left: 10rpx;
-  margin-top: 20rpx;
-  float: left;
-  width: 300rpx;
-  height: 60rpx;
+margin-left:20rpx;
+margin-top:25rpx;
+float:left;
+width:200rpx;
+height:40rpx;
+font-size:30rpx;
+font-family:'黑体';
+
 }
 .jingdiananlie-2{
-   margin-left: 10rpx;
-  font-size: 30rpx;
-  color: #bfbfbf;
+  margin-left:20rpx;
+font-size:26rpx;
+
+color:#ADADAD;
+
 }
 .jingdiananlie-3{
-  margin-left: 10rpx;
+  margin-left: 20rpx;
   height: 50rpx;
   width: 100%;
 }
 .jingdiananlie-3-zi1{
-  color: #bfbfbf;
-  font-size: 30rpx;
+  color: #ADADAD;
+ font-size:24rpx;
   margin-right: 20rpx;
   float: left;
   height: 30rpx;
 }
 .jingdiananlie-3-zi11{
-  margin-right: 20rpx;
-  float: right;
-  font-size: 30rpx;
-  color: #bfbfbf;
+  margin-right:27px;
+float:right;
+font-size:26rpx;
+color:#FF8E01;
+
 }
+
+/* 选择 */
 .jingdiananlie-4{
-  height: 200rpx;
-  width: 200%;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+  height: 100rpx;
+  width: 100%;
 }
 .jingdiananlie-4-zong{
-  margin-top: 30rpx;
-  height: 70rpx;
+width: 100%;
 }
 
 .jingdiananlie-4-zong image{
   color: #bfbfbf;
-  margin-left: 10rpx;
+  margin-left: 4rpx;
   /* display: none; */
-  width: 740rpx;
-  height: 90rpx;
+  width: 100%;
+  height: 100rpx;
 
 }
-.jingdiananlie-5{
-  margin-top: 30rpx;
-  height: 100rpx;
+.hengtiao{
   width: 100%;
+  height: 15rpx;
+  background-color: #e6e6e6;
+}
+
+/* 选择 */
+.jingdiananlie-5{
+height:90rpx;
+width:100%;
+
+display:flex;
+align-items:center;
+
+
 }
 .jingdiananlie-5-left{
-  margin-left: 10rpx;
-  text-align: center;
-  font-size: 35rpx;
-  width: 100rpx;
-  height: 90rpx;
-  float: left;
-  background-color: #efb336;
-  box-shadow:5px 2px 3px #000;
+margin-top:7rpx;
+color:white;
+padding:5rpx 5rpx 5rpx 5rpx;
+margin-left:20rpx;
+text-align:center;
+font-size:23rpx;
+width:60rpx;
+height:60rpx;
+float:left;
+background-color:#fbc90a;
+border-radius:10rpx;
+display:flex;
+align-items:center;
+justify-content:center;
+
+
+  /* box-shadow:5px 2px 3px #000; */
 }
 .jingdiananlie-5-main{
-  margin-left: 30rpx;
-  width: 60%;
-  height: 90rpx;
-  float: left;
-  overflow: hidden;
+
+width:60%;
+
+float:left;
+overflow:hidden;
+
 }
 .jingdiananlie-5-botton{
-  margin-right: 10rpx;
+  margin-left:70rpx;
   font-size: 25rpx;
-  float: right;
-  color: #cdcdcd;
+  
+  color: #ADADAD;
+  font-family:'黑体';
+
 }
 .jingdiananlie-5-main1{
-  margin-right: 10rpx;
-  float: left;
-  height: 90rpx;
-  width: 90rpx;
-  border-radius: 45rpx;
+  margin-left:5px;
+float:left;
+height:60rpx;
+width:60rpx;
+border-radius:45rpx;
+
 }
 .jingdiananlie-5-main1 image{
   width: 100%;
   height: 100%;
 }
 .jingdiananlie-6{
-  margin-left: 10rpx;
-  margin-top: 45rpx;
+ margin-left:20rpx;
+margin-top:20rpx;
+width:100%;
+height:50rpx;
+font-weight:normal;
+font-size:28rpx;
 
-    width: 100%;
-    height: 50rpx;
-    font-weight: normal;
 }
 .jingdiananlie-7{
   margin-top: 20rpx;
     width: 100%;
-    height: 50rpx;
+    height: 35rpx;
 }
 .jingdiananlie-7-left{
-  margin-left: 10rpx;
-  float: left;
-  font-size: 30rpx;
-  color: #8a8a8a;
+  margin-left:20rpx;
+float:left;
+font-size:23rpx;
+color:#8a8a8a;
+
 }
 .jingdiananlie-7-right{
-  margin-right: 10rpx;
-  margin-left: 10rpx;
+  margin-right: 20rpx;
+  
   float: right;
-  font-size: 30rpx;
+  font-size:23rpx;
   color: #8a8a8a;  
 }
-.jingdiananlie-8{
-  margin-left: 30rpx;
-  padding-top: 20rpx;
+.xiahuaxian{
   clear: both;
-  font-size: 28rpx;
-  height: 50rpx;
-  width: 100%;
+  margin-top: 60rpx;
+  margin-bottom: 45rpx;
+  widows: 100%;
+  border: #e6e6e6 solid 0.5rpx;
+}
+.jingdiananlie-8{
+margin-bottom:20rpx;
+background-color:#FFF5E9;
+padding-left:30rpx;
+padding-top:20rpx;
+clear:both;
+font-size:26rpx;
+height:50rpx;
+width:90%;
+color:#8a8a8a;
+margin-left:20rpx;
+
 }
 .jingdiananlie-9-left1{
   margin-left: 10rpx;
@@ -154,7 +204,8 @@
     margin-top: 30rpx;
     margin-right: 10rpx;
   float: right;
-  font-size: 30rpx;
+  font-size: 25rpx;
+  color: #cdcdcd;
 }
 .jingdiananlie-10{
   clear: both;

@@ -76,7 +76,7 @@ line-height: 55rpx;
 }
 .inner {
 display: flex;
-padding: 30rpx;
+padding: 40rpx;
 position: relative;
 }
 .inner:after {
@@ -94,7 +94,7 @@ position: relative;
   height: 100rpx;
   border: 1px solid #dfdfdf;
   background: #f6f6f6;
-  padding: 20rpx;
+
 
 }
   .cover-img {

@@ -62,5 +62,10 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  wl: function (e) {
+    wx.navigateTo({
+      url: '../logistics/logistics'
+    })
+  },
 })

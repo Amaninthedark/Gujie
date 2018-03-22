@@ -22,8 +22,8 @@
                         <text>15000</text>
                      </view> 
               </view>
-              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu'>确认收货</view> </navigator> 
-              <navigator url=""> <view class='daifukuan-zhu-mu-right-anniu1'>查看物流</view> </navigator> 
+               <view class='daifukuan-zhu-mu-right-anniu' >确认收货</view>  
+             <view class='daifukuan-zhu-mu-right-anniu1' bindtap="wl">查看物流</view> 
             </view>
         </view>
             <view class='daifukuan-zhu-hearder'>

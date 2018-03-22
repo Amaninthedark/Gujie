@@ -305,5 +305,15 @@ Page({
     setTimeout(() => {
       wx.stopPullDownRefresh()
     }, 1000)
-  }
+  },
+  gongdifenbu: function () {
+    wx.navigateTo({
+      url: '../gongdifenbu/gongdifenbu'
+    });
+  },
+  jingdiananlie: function () {
+    wx.navigateTo({
+      url: '../jingdiananlie/jingdiananlie'
+    });
+  },
 })

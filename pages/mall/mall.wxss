@@ -38,14 +38,15 @@
 }
 .search {
   display: block;
-  background: #707070;
+  background:white;
   height: 5%;
   padding: 1.5% 3%;
+  border-bottom: 1px solid #F1F1F1;
 }
 .search input {
   width: 100%;
   border-radius: 13px;
-  background: #fff;
+  background: #F1F1F1;
   border: none;
   font-size: 14px;
   text-align: center;
@@ -191,7 +192,7 @@ font-size:25rpx;
 }
 .ping_cc {
   display: inline-block;
-  font-size: 20rpx;
+  font-size: 25rpx;
   color: #999;
   margin: 6rpx 0;
   margin-left: 5rpx;
@@ -201,7 +202,7 @@ font-size:25rpx;
 }
 .ping_dd{
   display: inline-block;
-  font-size: 20rpx;
+  font-size: 25rpx;
   color: #999;
   margin: 6rpx 0;
   overflow: hidden;
@@ -211,7 +212,7 @@ font-size:25rpx;
 }
 
 .ping_ee {
-  color: #ff5f00;
+  color: #EF3C3C;
   flex: 1;
 }
 .padding_sp {
@@ -220,9 +221,13 @@ font-size:25rpx;
 }
 .icon-jian{
   margin: 0rpx 25rpx 0rpx 25rpx;
+  color:#EF3C3C;
+
 }
 .icon-jia{
   margin: 0rpx 25rpx 0rpx 25rpx;
+  color:#EF3C3C;
+
 }
 
 .cart{

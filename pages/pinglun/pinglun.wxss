@@ -1,0 +1,54 @@
+.pinglun-right{
+  float: right;
+  width: 70%;
+  height: 100rpx;
+}
+.pinglun-right .star {
+  margin-top: 50rpx;
+  float: left;
+  height: 54rpx;
+  /* text-align: center; */
+  /* line-height: 54rpx; */
+   padding: 10rpx 10rpx 10rpx 0rpx; 
+}
+.star image{
+  width: 55rpx;
+  height: 55rpx;
+}
+.pinglun{
+  width: 100%;
+  height: 220rpx;
+}
+.pinglun-image image{
+  float: left;
+  margin: 20rpx 20rpx 20rpx 40rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+.huaxian{
+  margin-left: 20rpx;
+  border-bottom: #e6e6e6 solid 0.5rpx;
+}
+.changping{
+  height: 300rpx;
+  width: 100%;
+}
+.changping textarea{
+  width: 95%;
+  padding-left: 30rpx;
+  margin-top: 30rpx;
+  height: 150rpx;
+  padding-right: 20rpx;
+   line-height: 10rpx;
+  font-size: 30rpx;
+}
+.anniu{
+  font-size: 35rpx;
+  padding-top: 15rpx;
+  text-align: center;
+  height: 60rpx;
+  width: 90%;
+  border-radius: 20rpx;
+  margin: auto;
+  background-color:#f39a41;
+}
