@@ -26,9 +26,10 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FFD39B",
+    "navigationBarBackgroundColor": "#FF8E01",
     "navigationBarTitleText": "古杰装饰",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"black",
+    "backgroundColorTop":"#F7F7F7"
   },
       "tabBar": { 
    

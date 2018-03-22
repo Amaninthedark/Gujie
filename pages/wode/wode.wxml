@@ -37,7 +37,7 @@
         </view >
  </view>
 <view class='kuang'>
- <navigator class='soujin'  url="../gouwuche/gouwuche">
+ <navigator class='soujin'  url="../shangcheng/shangcheng">
         <view class='shou1'>
             <view class='iconfont icon-gouwuche'></view>
                 <view class='biankuang'>
