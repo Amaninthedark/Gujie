@@ -22,7 +22,7 @@
 <view class='index-conten'>
     <view class='index-page'  >
    
-      <view class='index-page-conten'>
+      <view class='index-page-conten' bindtap="zaixiangongdi">
       
         <view class='index-page-image'>
           <image src="/images/4.jpg" ></image> 
@@ -34,7 +34,7 @@
         </view>
       </view>
      
-        <view class='index-page-conten'>
+    <view class='index-page-conten' bindtap="yuyue">
         <view class='index-page-image'>
           <image src="/images/2.jpg" ></image> 
         </view>

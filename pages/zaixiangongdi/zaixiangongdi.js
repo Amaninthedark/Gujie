@@ -306,14 +306,14 @@ Page({
       wx.stopPullDownRefresh()
     }, 1000)
   },
-  gongdifenbu: function () {
-    wx.navigateTo({
-      url: '../gongdifenbu/gongdifenbu'
-    });
-  },
-  jingdiananlie: function () {
+   anli: function () {
     wx.navigateTo({
       url: '../jingdiananlie/jingdiananlie'
     });
   },
+   gongdifenbu: function () {
+     wx.navigateTo({
+       url: '../gongdifenbu/gongdifenbu'
+     });
+   },
 })

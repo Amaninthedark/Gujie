@@ -39,7 +39,17 @@ Page({
   },
   zaixiangongdi: function () {
     wx.navigateTo({
-      url: '../zaixiangongdi/zaixiangongdi'
+      url: '../gongdifenbu/gongdifenbu'
     });
   },
+  yuyue: function () {
+    wx.navigateTo({
+      url: '../yuyue/yuyue'
+    });
+  },
+  zaixiangongdi: function () {
+    wx.switchTab({
+      url: '../zaixiangongdi/zaixiangongdi'
+    });
+  }
 })  
