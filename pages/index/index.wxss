@@ -46,28 +46,31 @@ page{
   font-weight:100;
 }
 .index-page{
-  width: 100%;
-  height: 400rpx;
-  background: white;
-  display: flex;
- 
-  
-  flex-wrap: wrap;
-   
-  
+ width:100%;
+height:260rpx;
+background:white;
+display:flex;
+flex-wrap:wrap;
+
 }
 .index-page-conten{
-  width: 120rpx;
-  margin-left: 100rpx;
-  height: 180rpx;
-  
-  
-  margin-top:10rpx;
+width:120rpx;
+height:100rpx;
+margin-top:10rpx;
+text-align:center;
+margin-left:55rpx;
+
+
 }
 .index-page-image{
-  width: 120rpx;
-  height: 120rpx;
-border-radius:100rpx; 
+width:80rpx;
+height:80rpx;
+border-radius:100rpx;
+float:left;
+
+margin-left:20rpx;
+
+
 }
 .index-page-image image{
   width: 100%;
@@ -76,13 +79,10 @@ border-radius:100rpx;
 }
 .index-page-text{
   width: 100%;
-  line-height:82rpx;
+  float:left;
   font-size: 25rpx;
   color: #8F8F8F;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
 }
 .index-conten{
   background: #FAFAFA;
@@ -90,36 +90,34 @@ border-radius:100rpx;
 }
 .index-goods{
   width: 100%;
-  height: 1010rpx;
+ 
  background: white;
 
   margin-top:20px;
 }
 .index-goods-title{
-  width: 100%;
-  height: 100rpx;
- font-size: 35rpx;
-   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  font-family:SimHei;
+ width:100%;
+height:60rpx;
+font-size:38rpx;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+font-family:SimHei;
+
 }
 .index-goods-conten{
   width: 100%;
   height: 900rpx;
   display: flex;
   flex-wrap: wrap;
-  padding:10rpx;
+ 
 }
 .index-goods-shop{
-  width: 230rpx;
-  height: 300rpx;
-  
+ width:230rpx;
+height:300rpx;
+margin-left:20rpx;
 
-  margin-left: 10rpx;
-  
-    
 }
 .goods-shop-top{
   width: 100%;

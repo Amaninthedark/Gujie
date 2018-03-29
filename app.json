@@ -26,7 +26,8 @@
       "pages/logistics/logistics",
       "pages/zaixiangongdi/zaixiangongdi",
       "pages/gongdifenbu/gongdifenbu",
-      "pages/pinglun/pinglun"
+      "pages/pinglun/pinglun",
+      "pages/price/price"
   ],
   "window":{
     "backgroundTextStyle":"light",

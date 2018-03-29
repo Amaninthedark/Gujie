@@ -51,5 +51,10 @@ Page({
     wx.switchTab({
       url: '../zaixiangongdi/zaixiangongdi'
     });
+  },
+  price: function () {
+    wx.navigateTo({
+      url: '../price/price'
+    });
   }
 })  

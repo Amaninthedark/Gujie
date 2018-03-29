@@ -3,11 +3,11 @@
  <view>
  
   <swiper indicator-dots="{{indicatorDots}}"  
-          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:230px;'>  
+          autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:180px;'>  
         <block wx:for="{{imgUrls}}">  
           <swiper-item>  
             <navigator url="{{item.link}}" hover-class="navigator-hover">  
-              <image src="{{item.url}}" class="slide-image" width="355" height="230"/>  
+              <image src="{{item.url}}" class="slide-image" style='height:180px;' />  
             </navigator>   
           </swiper-item>  
         </block>   
@@ -22,7 +22,7 @@
 <view class='index-conten'>
     <view class='index-page'  >
    
-      <view class='index-page-conten' bindtap="zaixiangongdi">
+      <view class='index-page-conten' bindtap="price">
       
         <view class='index-page-image'>
           <image src="/images/4.jpg" ></image> 
@@ -73,6 +73,24 @@
           古杰商城
         </view>
       </view>
+        <view class='index-page-conten' bindtap="team">
+        <view class='index-page-image'>
+          <image src="/images/4.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          我的团队
+        </view>
+      </view>
+
+        <view class='index-page-conten' bindtap="team">
+        <view class='index-page-image'>
+          <image src="/images/4.jpg" ></image> 
+        </view>
+        <view class='index-page-text'>
+          我的团队
+        </view>
+      </view>
+
         <view class='index-page-conten' bindtap="team">
         <view class='index-page-image'>
           <image src="/images/4.jpg" ></image> 
