@@ -34,7 +34,9 @@ page{
  border-radius: 20px;
   font-weight: bold;
    padding-left: 20rpx;
+   color: red;
 }
+
 .index-search label{
   width: 100%;
   height: 100%;
@@ -44,6 +46,7 @@ page{
   flex-wrap:wrap;
   margin-left: 100rpx;
   font-weight:100;
+  color:#666;
 }
 .index-page{
  width:100%;

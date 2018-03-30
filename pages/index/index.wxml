@@ -26,7 +26,6 @@
       
         <view class='index-page-image'>
           <image src="/images/4.jpg" ></image> 
-        
         </view>
          
         <view class='index-page-text'>
@@ -87,7 +86,7 @@
           <image src="/images/4.jpg" ></image> 
         </view>
         <view class='index-page-text'>
-          我的团队
+          我的店铺
         </view>
       </view>
 
@@ -96,7 +95,7 @@
           <image src="/images/4.jpg" ></image> 
         </view>
         <view class='index-page-text'>
-          我的团队
+          一键报价
         </view>
       </view>
 
