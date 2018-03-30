@@ -148,7 +148,7 @@
 }
 .scroll-view-main-right-bottom3 text{
 
-  font-size: 35rpx;
+  font-size: 30rpx;
 }
 .ziti{
   font-size: 30rpx;

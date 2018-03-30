@@ -151,10 +151,11 @@ margin-left:20rpx;
   height: 100%; 
 }
 .contact-list{
-  width: 100rpx;
-  background: black;
-  position: absolute;
-  top:430rpx;
-  left: 550rpx;
-  opacity: .0;
+  width:100rpx;
+background:black;
+position:absolute;
+top:360rpx;
+left:410rpx;
+opacity:.0;
+
 }

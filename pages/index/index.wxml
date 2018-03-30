@@ -47,8 +47,7 @@
       <view class='contact-list' >
         <contact-button type="default-light" size="27" session-from="weapp"></contact-button>  
         <contact-button type="default-light" size="27" session-from="weapp"></contact-button>  
-        <contact-button type="default-light" size="27" session-from="weapp"></contact-button>  
-        <contact-button type="default-light" size="27" session-from="weapp"></contact-button> 
+       
       </view> 
         <view class='index-page-image'>
         <image src="/images/1.jpg" ></image> 

@@ -12,11 +12,15 @@
                 <text>已服务1818位业主</text>
             </view>
         </view>
- 
+  <view class='contact-list' >
+        <contact-button type="default-light" size="19" session-from="weapp"></contact-button>  
+        <contact-button type="default-light" size="19" session-from="weapp"></contact-button>  
+        <contact-button type="default-light" size="19" session-from="weapp"></contact-button>  
+      </view> 
         <view class='top1-right'>
-          <button>
+                 <view class='top1-right-1'>
             免费咨询
-          </button>
+          </view>
         </view>
     </view>
  

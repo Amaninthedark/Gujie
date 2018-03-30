@@ -48,13 +48,13 @@ Page({
     });
   },
   zaixiangongdi: function () {
-    wx.switchTab({
-      url: '../zaixiangongdi/zaixiangongdi'
+    wx.navigateTo({
+      url: '../gongdifenbu/gongdifenbu'
     });
   },
   price: function () {
-    wx.navigateTo({
-      url: '../price/price'
+    wx.switchTab({
+      url: '../zaixiangongdi/zaixiangongdi'
     });
   }
 })  
