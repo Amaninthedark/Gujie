@@ -1,7 +1,6 @@
 <import src="../../wxSearch/wxSearch.wxml"  />
-
+<scroll-view style="height: 100%;" scroll-y="true" scroll-top="{{scrollTop.scroll_top}}" bindscroll="scrollTopFun">  
  <view>
- 
   <swiper indicator-dots="{{indicatorDots}}"  
           autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style='height:180px;'>  
         <block wx:for="{{imgUrls}}">  
@@ -13,10 +12,10 @@
         </block>   
   </swiper> 
 </view>
-<view class='index-search'>
+<view class=" {{scrollTop.goTop_show  ?'index-search-2':'index-search-1'}}" >
   <view class='index-search-form' >
-     GJ
-    <label><icon type="search" size="15" />搜索喜欢的商品</label>
+  <view class='index-search-text'>GJ</view>
+    <label class='index-search-label'><icon type="search" size="15" />搜索喜欢的商品</label>
   </view> 
 </view>
 <view class='index-conten'>
@@ -25,7 +24,7 @@
       <view class='index-page-conten' bindtap="price">
       
         <view class='index-page-image'>
-          <image src="/images/4.jpg" ></image> 
+          <image src="/images/充值中心.png" ></image> 
         </view>
          
         <view class='index-page-text'>
@@ -35,7 +34,7 @@
      
     <view class='index-page-conten' bindtap="yuyue">
         <view class='index-page-image'>
-          <image src="/images/2.jpg" ></image> 
+          <image src="/images/预约量房.png" ></image> 
         </view>
         <view class='index-page-text'>
         预约量房
@@ -49,7 +48,7 @@
        
       </view> 
         <view class='index-page-image'>
-        <image src="/images/1.jpg" ></image> 
+        <image src="/images/免费咨询.png" ></image> 
         </view> 
         <view class='index-page-text'>
           免费咨询
@@ -57,7 +56,7 @@
       </view>
         <view class='index-page-conten' bindtap="zaixiangongdi">
         <view class='index-page-image'>
-          <image src="/images/2.jpg" ></image> 
+          <image src="/images/在线工地.png" ></image> 
         </view>
         <view class='index-page-text'>
           在线工地
@@ -65,7 +64,7 @@
       </view>
         <view class='index-page-conten'  bindtap="shangcheng">
         <view class='index-page-image'>
-          <image src="/images/3.jpg" ></image> 
+          <image src="/images/古杰商城.png" ></image> 
         </view>
         <view class='index-page-text'  >
           古杰商城
@@ -73,7 +72,7 @@
       </view>
         <view class='index-page-conten' bindtap="team">
         <view class='index-page-image'>
-          <image src="/images/4.jpg" ></image> 
+          <image src="/images/我的团队.png" ></image> 
         </view>
         <view class='index-page-text'>
           我的团队
@@ -82,7 +81,7 @@
 
         <view class='index-page-conten' bindtap="team">
         <view class='index-page-image'>
-          <image src="/images/4.jpg" ></image> 
+          <image src="/images/古杰特惠.png" ></image> 
         </view>
         <view class='index-page-text'>
           我的店铺
@@ -91,7 +90,7 @@
 
         <view class='index-page-conten' bindtap="team">
         <view class='index-page-image'>
-          <image src="/images/4.jpg" ></image> 
+          <image src="/images/一键报价.png" ></image> 
         </view>
         <view class='index-page-text'>
           一键报价
@@ -220,3 +219,4 @@
         </view>
     </view>
 </view>
+</scroll-view >

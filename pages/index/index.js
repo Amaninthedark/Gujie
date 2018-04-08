@@ -17,8 +17,28 @@ Page({
     autoplay: true,
     interval: 5000,
     duration: 1000,
-    userInfo: {}
+    userInfo: {},
+    scrollTop: {
+      scroll_top: 0,
+      goTop_show: false
+    }
   },
+ 
+  scrollTopFun: function (e) {
+    console.log(e.detail);
+    if (e.detail.scrollTop > 100) {//触发gotop的显示条件  
+      this.setData({
+        'scrollTop.goTop_show': true
+      });
+      console.log(this.data.scrollTop)
+    } else {
+      this.setData({
+        'scrollTop.goTop_show': false
+      });
+    }
+  },
+
+
   onLoad: function () {
     console.log('onLoad test');
   },
