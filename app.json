@@ -29,36 +29,44 @@
       "pages/price/price"
   ],
   "window":{
+    
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FFB90F",
+    "navigationBarBackgroundColor": "#FB9D17",
     "navigationBarTitleText": "古杰装饰",
     "navigationBarTextStyle":"black",
     "backgroundColorTop":"#F7F7F7"
   },
       "tabBar": { 
-   
+        "color":"#CECECE",
+      "selectedColor": "#FF8A00",
         "list": [
           {
+           
+            "selectedIconPath":"images/首页2.png",
             "iconPath": "images/首页.png",
             "pagePath": "pages/index/index", 
             "text": "首页"
           },
           {
+                  "selectedIconPath": "images/旗子2.png",
             "iconPath": "images/旗子.png",
             "pagePath": "pages/team/team",
             "text": "团队"
           },  
           { 
+              "selectedIconPath": "images/文档2.png",
             "iconPath": "images/文档.png",
             "pagePath": "pages/zaixiangongdi/zaixiangongdi",
             "text": "案例"
           },  
           {
+              "selectedIconPath": "images/购物车2.png",
             "iconPath": "images/购物车.png",
             "pagePath": "pages/mall/mall",
             "text": "商城"
           }, 
           {
+                "selectedIconPath": "images/我的2.png",
             "iconPath": "images/我的.png",
             "pagePath": "pages/wode/wode",
             "text": "我的" 
