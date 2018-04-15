@@ -67,14 +67,14 @@ Page({
       url: '../yuyue/yuyue'
     });
   },
-  zaixiangongdi: function () {
-    wx.navigateTo({
-      url: '../gongdifenbu/gongdifenbu'
-    });
-  },
   price: function () {
     wx.switchTab({
       url: '../zaixiangongdi/zaixiangongdi'
+    });
+  },
+  calculator: function () {
+    wx.navigateTo({
+      url: '../calculator/calculator' 
     });
   }
 })  

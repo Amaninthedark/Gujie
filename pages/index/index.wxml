@@ -88,7 +88,7 @@
         </view>
       </view>
 
-        <view class='index-page-conten' bindtap="team">
+        <view class='index-page-conten' bindtap="calculator">
         <view class='index-page-image'>
           <image src="/images/一键报价.png" ></image> 
         </view>

@@ -26,7 +26,8 @@
       "pages/zaixiangongdi/zaixiangongdi",
       "pages/gongdifenbu/gongdifenbu",
       "pages/pinglun/pinglun",
-      "pages/price/price"
+      "pages/price/price",
+      "pages/calculator/calculator"
   ],
   "window":{
     

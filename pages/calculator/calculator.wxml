@@ -1,0 +1,42 @@
+<view class="content">
+  <view class='head'>
+      <image src='../../images/11.jpg'></image>
+  </view>
+
+<view class="form-item">
+              <view class="form-item-bd">
+               <view class="arrows">
+                      <image src='../../images/向下箭头.png'></image>
+                    </view>
+                  <picker bindchange="changeProvince" mode="selector" range="{{provinceName}}" value="{{provinceSelIndex}}">
+                      <view class="input {{!provinceName[provinceSelIndex] ? 'input-placeholder' : ''}}">{{provinceName[provinceSelIndex] || '请选择所在省'}}</view>
+                    
+                  </picker>
+                 
+              </view>
+</view>
+<view class="form-item">
+          
+            <view class="form-item-bd">
+                  <view class="arrows">
+                      <image src='../../images/向下箭头.png'></image>
+                    </view>
+                <picker bindchange="changeCity" mode="selector" range="{{cityName}}" value="{{citySelIndex}}" disabled="{{!cityEnabled}}">
+                    <view class="input-placeholder">{{cityName[citySelIndex] || '请选择所在市'}}</view>
+                    
+                </picker>
+            </view>
+        </view>
+        <view class="form-item">
+           
+            <view class="form-item-bd">
+                  <view class="arrows">
+                      <image src='../../images/向下箭头.png'></image>
+                    </view>
+                <picker bindchange="changeDistrict" mode="selector" range="{{districtName}}" value="{{districtSelIndex}}" disabled="{{! districtEnabled}}">
+                    <view class="input {{!districtName[districtSelIndex] ? 'input-placeholder' : ''}}">{{districtName[districtSelIndex] || '请选择所在区'}}</view>
+                   
+                </picker>
+            </view>
+        </view>
+</view>
