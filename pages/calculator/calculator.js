@@ -6,8 +6,67 @@ Page({
    * 页面的初始数据
    */
   data: {
+    array1: ['1室', '2室', '3室', '4室'],
+    index1: 0,
 
+    array2: ['1厅', '2厅', '3厅', '4厅'],
+    index2: 0,
+
+    array3: ['1厨', '2厨', '3厨', '4厨'],
+    index3: 0,
+
+    array4: ['1卫', '2卫', '3卫', '4卫'],
+    index4: 0,
+
+    decorarray: ['简约', '欧式', '中式'],
+    decorindex: 0,
+
+    decoratearry: ['经济型', '中档型', '高档型', '豪华型'],
+    decorateindex: 0,
   },
+  bindPickerChange1: function (e) {
+
+    this.setData({
+      index1: e.detail.value
+    })
+  },
+
+  bindPickerChange2: function (e) {
+
+    this.setData({
+      index2: e.detail.value
+    })
+  },
+
+  bindPickerChange3: function (e) {
+
+    this.setData({
+      index3: e.detail.value
+    })
+  },
+
+  bindPickerChange4: function (e) {
+
+    this.setData({
+      index4: e.detail.value
+    })
+  },
+
+  decor: function (e) {
+
+    this.setData({
+      decorindex: e.detail.value
+    })
+  },
+  decorate: function (e) {
+
+    this.setData({
+      decorateindex: e.detail.value
+    })
+  },
+
+
+
 
   /**
    * 生命周期函数--监听页面加载

@@ -1,42 +1,128 @@
 <view class="content">
   <view class='head'>
-      <image src='../../images/11.jpg'></image>
+    <image src='../../images/calculator.jpg'></image>
   </view>
 
-<view class="form-item">
-              <view class="form-item-bd">
-               <view class="arrows">
-                      <image src='../../images/向下箭头.png'></image>
-                    </view>
-                  <picker bindchange="changeProvince" mode="selector" range="{{provinceName}}" value="{{provinceSelIndex}}">
-                      <view class="input {{!provinceName[provinceSelIndex] ? 'input-placeholder' : ''}}">{{provinceName[provinceSelIndex] || '请选择所在省'}}</view>
-                    
-                  </picker>
-                 
-              </view>
-</view>
-<view class="form-item">
-          
-            <view class="form-item-bd">
-                  <view class="arrows">
-                      <image src='../../images/向下箭头.png'></image>
-                    </view>
-                <picker bindchange="changeCity" mode="selector" range="{{cityName}}" value="{{citySelIndex}}" disabled="{{!cityEnabled}}">
-                    <view class="input-placeholder">{{cityName[citySelIndex] || '请选择所在市'}}</view>
-                    
-                </picker>
-            </view>
-        </view>
-        <view class="form-item">
-           
-            <view class="form-item-bd">
-                  <view class="arrows">
-                      <image src='../../images/向下箭头.png'></image>
-                    </view>
-                <picker bindchange="changeDistrict" mode="selector" range="{{districtName}}" value="{{districtSelIndex}}" disabled="{{! districtEnabled}}">
-                    <view class="input {{!districtName[districtSelIndex] ? 'input-placeholder' : ''}}">{{districtName[districtSelIndex] || '请选择所在区'}}</view>
-                   
-                </picker>
-            </view>
-        </view>
+  <view class="form-item">
+    <view class="form-item-bd">
+      <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+      <picker bindchange="changeProvince" mode="selector" range="{{provinceName}}" value="{{provinceSelIndex}}">
+        <view class="input {{!provinceName[provinceSelIndex] ? 'input-placeholder' : ''}}">{{provinceName[provinceSelIndex] || '请选择所在省'}}</view>
+
+      </picker>
+
+    </view>
+  </view>
+  <view class="form-item">
+   
+    <view class="form-item-bd">
+      <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+      <picker bindchange="changeCity" mode="selector" range="{{cityName}}" value="{{citySelIndex}}" disabled="{{!cityEnabled}}">
+        <view class="input-placeholder">{{cityName[citySelIndex] || '请选择所在市'}}</view>
+
+      </picker>
+    </view>
+  </view>
+  <view class="form-item">
+
+    <view class="form-item-bd">
+      <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+      <picker bindchange="changeDistrict" mode="selector" range="{{districtName}}" value="{{districtSelIndex}}" disabled="{{! districtEnabled}}">
+        <view class="input {{!districtName[districtSelIndex] ? 'input-placeholder' : ''}}">{{districtName[districtSelIndex] || '请选择所在区'}}</view>
+      </picker>
+    </view>
+  </view>
+
+
+
+  <view class="form-item">
+    <view class="form-item-bd">
+      <view style='float:left;width:200rpx; margin-top: 10rpx;'>您的房屋面积</view>
+      <view style='float:right' class="arrows">
+        ㎡
+      </view>
+      <input class='PF' name="userName" maxlength='4' bindinput="userNameInput" />
+    </view>
+  </view>
+
+  <view class="section" style='float:left;'>
+     <view class="arrows-2">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+      <view class="picker">
+        {{array1[index1]}}
+      </view>
+    </picker>
+  </view>
+
+    <view class="section" style='float:left;'>
+     <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+    <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+      <view class="picker">
+        {{array2[index2]}}
+      </view>
+    </picker>
+  </view>
+
+   <view class="section" style='float:left;'>
+     <view class="arrows-2">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+    <picker bindchange="bindPickerChange3" value="{{index3}}" range="{{array3}}">
+      <view class="picker">
+        {{array3[index3]}}
+      </view>
+    </picker>
+  </view>
+
+    <view class="section" style='float:left;'>
+     <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+    <picker bindchange="bindPickerChange4" value="{{index4}}" range="{{array4}}">
+      <view class="picker">
+        {{array4[index4]}}
+      </view>
+    </picker>
+  </view>
+
+
+   <view class="form-item" style='float:left;' >
+     <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+    <picker bindchange="decor" value="{{decorindex}}" range="{{decorarray}}"  mode="selector">
+      <view >
+        装修风格：{{decorarray[decorindex]}}  
+      </view>
+    </picker>
+  </view>
+
+     <view class="form-item" style='float:left;' >
+     <view class="arrows">
+        <image src='../../images/向下箭头.png'></image>
+      </view>
+    <picker bindchange="decorate" value="{{decorateindex}}" range="{{decoratearry}}"  mode="selector">
+      <view >
+        装修档次：{{decoratearry[decorateindex]}}  
+      </view>
+    </picker>
+  </view>
+
+   <view class="form-item"  style='float:left;'>
+    <view class="form-item-bd">    
+      <input class='PF'  maxlength='11' placeholder="您的电话号码"/> 
+    </view>
+  </view>
+ 
+  <button class='text-button' bindtap="clickButton">立即报价</button>
 </view>

@@ -47,3 +47,41 @@ page{
 .input-placeholder{
   color: #AEAEAE;
 }
+.PF{
+  width: 400rpx;
+
+  margin-top: -5rpx;
+}
+.section{
+  border:1px solid #999;
+  border-radius: 8rpx;
+  background: white;
+  width: 310rpx;
+  font-size: 12px;
+  height: 50rpx;
+  padding-top:15rpx;
+  padding-left:25rpx;
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  color: #AEAEAE;
+}
+.arrows-2{
+  width: 20rpx;
+  height: 20rpx;
+   position: absolute;
+   left: 320rpx;
+}
+.arrows-2 image{
+  width: 100%;
+  height: 100%;
+}
+
+.text-button{
+  background: #FF6801;
+  color: white;
+  width: 94%;
+  height: 65rpx;
+  font-size: 13px;
+  top:30rpx ;
+  
+}
