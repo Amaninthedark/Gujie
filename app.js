@@ -5,7 +5,7 @@ App({
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-
+    wx.setStorageSync('URL', 'https://www.sxscott.com/gujie/')
     // 登录
     wx.login({
       success: res => {

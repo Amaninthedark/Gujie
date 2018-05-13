@@ -27,19 +27,20 @@
       "pages/gongdifenbu/gongdifenbu",
       "pages/pinglun/pinglun",
       "pages/price/price",
+      "pages/search/search",
       "pages/calculator/calculator"
   ],
   "window":{
     
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#FB9D17",
+    "navigationBarBackgroundColor": "#EECFA1",
     "navigationBarTitleText": "古杰装饰",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle":"white",
     "backgroundColorTop":"#F7F7F7"
   },
       "tabBar": { 
         "color":"#CECECE",
-      "selectedColor": "#FF8A00",
+      "selectedColor": "#EECFA1",
         "list": [
           {
            

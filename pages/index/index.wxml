@@ -12,7 +12,7 @@
         </block>   
   </swiper> 
 </view>
-<view class=" {{scrollTop.goTop_show  ?'index-search-2':'index-search-1'}}" >
+<view class=" {{scrollTop.goTop_show  ?'index-search-2':'index-search-1'}}"  bindtap="search">
   <view class='index-search-form' >
   <view class='index-search-text'>GJ</view>
     <label class='index-search-label'><icon type="search" size="15" />搜索喜欢的商品</label>

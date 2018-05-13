@@ -93,8 +93,8 @@
 }
 .clickSel{
  background: #ffffff;
-color:#EECFA1;
-border-left: 8rpx solid #EECFA1;
+color:#B68F4C;
+border-left: 8rpx solid #B68F4C;
 } 
 .removeSel {  
   color: black;  

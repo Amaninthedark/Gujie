@@ -6,7 +6,7 @@
 .cart-list{
     position: relative;
     padding: 20rpx 20rpx 20rpx 285rpx;
-    height: 185rpx;
+   
     border-bottom: 1rpx solid #e9e9e9;
 }
 .cart-list .cart-pro-select{
@@ -30,7 +30,7 @@
     height: 50rpx;
     line-height: 50rpx;
      overflow: hidden; 
-     font-size: 45rpx;
+     font-size: 30rpx;
 }
 .cart-list .cart-pro-name-guige{
     display: inline-block; 
@@ -39,6 +39,8 @@
     line-height: 30rpx;
      overflow: hidden; 
      color: #bfbfbf;
+     font-size:24rpx;
+
 }
 .cart-list .cart-pro-price{
     color: red;
@@ -67,14 +69,14 @@
     color: red;
     margin: 28rpx 10rpx 10rpx 10rpx;
     float: left;
-    font-size: 44rpx;
+    font-size: 40rpx;
     width: 50rpx;
     height: 100%;
 }
 .cart-count-add{
     color: red;
     margin: 28rpx 10rpx 10rpx 10rpx;
-    font-size: 44rpx;
+    font-size: 40rpx;
     width: 50rpx;
     height: 100%;
     float: right;
@@ -97,7 +99,7 @@
 }
 .cart-footer{
     position: fixed;
-    bottom: 125rpx;
+    bottom: 0rpx;
     left: 0;
     width: 100%;
     height: 90rpx;

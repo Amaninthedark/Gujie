@@ -1,0 +1,35 @@
+<!--pages/search/search.wxml-->
+<view class='search-conten'> 
+  <view class='search-heard'>
+      <view class='left'>
+        <icon type="search" size="17" />
+        <input value='优质地板'  ></input>
+      </view>
+      <view class='right'>
+        <label>搜索</label>
+      </view>
+  </view>
+  <view class='search-bottom'>
+        <view class='search-bottom-heard'>
+              <view class='bottom-left'>
+                热门搜索
+              </view>
+              <view class='bottom-right'>
+                换一批
+              </view>
+        </view>
+        <view class='search-bottom-bottom'>
+          <label>优质地板</label>
+           <label>大理石</label>
+            <label>水管</label>
+             <label>开关面板</label>
+              <label>红木家具</label>
+                  <label>优质地板</label>
+           <label>大理石</label>
+            <label>水管</label>
+             <label>开关面板</label>
+              <label>红木家具</label>
+              
+        </view>
+  </view>
+</view>

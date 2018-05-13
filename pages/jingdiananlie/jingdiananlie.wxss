@@ -4,7 +4,7 @@
 }
 .jingdiananlie-left{
   font-size:25rpx;
-background-color:#FF8E01;
+background-color:#B68F4C;
 float:left;
 margin-left:20rpx;
 margin-top:20rpx;
@@ -49,13 +49,13 @@ color:#ADADAD;
   margin-right:27px;
 float:right;
 font-size:26rpx;
-color:#FF8E01;
+color:#A98C68;
 
 }
 
 /* 选择 */
 .jingdiananlie-4{
-  margin-left: 10rpx;
+  margin-left: 10rpx; 
   margin-top: 10rpx;
   height: 100rpx;
   width: 100%;
@@ -254,7 +254,7 @@ margin-left:20rpx;
   width: 85rpx;
   font-size: 28rpx;
     float: right;
-    background-color: #efb336;
+    background-color: #EECFA1;
     position: fixed;
     bottom: 90px;
     right: 10px;  
@@ -262,6 +262,8 @@ margin-left:20rpx;
     border: 0 solid #efb336;
     border-radius: 500px;
     box-shadow: 4px 1px 1px #cccccc;
+    color: #ffffff;
+    opacity: 0.9;
 
 }
 .post1{
@@ -270,7 +272,7 @@ margin-left:20rpx;
   width: 85rpx;
   font-size: 28rpx;
     float: right;
-    background-color: #efb336;
+    background-color: #EECFA1;
     position: fixed;
     bottom: 20px;
     right: 10px;  
@@ -278,5 +280,7 @@ margin-left:20rpx;
     border: 0 solid #efb336;
     border-radius: 500px;
     box-shadow: 4px 1px 1px #cccccc;
+    color: #ffffff;
+    opacity: 0.9;
 
 }

@@ -7,6 +7,8 @@
 	position: relative;
 	z-index: 5;
 	background: #fff;
+  color:#666;
+
 }
 .filter-tab text{
   font-size: 30rpx;
@@ -131,25 +133,16 @@
   margin-top: 57rpx;
   height: 50rpx;
   width: 100%;
+  color:#666;
+
 }
 .scroll-view-main-right-bottom1{
     width: 30%;
   float: left;
+  margin-left: 10rpx;
 }
-.scroll-view-main-right-bottom2{
-  width: 30%;
-   float: left;
 
-}
-.scroll-view-main-right-bottom3{
 
-    width: 30%; 
-   float: left;
-}
-.scroll-view-main-right-bottom3 text{
-
-  font-size: 30rpx;
-}
 .ziti{
   font-size: 30rpx;
 }
@@ -215,7 +208,7 @@ float:left;
 width:20rpx;
 height:30rpx;
 margin-top:20rpx;
-border-left:3px solid #FF7900;
+border-left:3px solid #B68F4C;
 margin-left:20rpx;
 border-radius:5rpx;
 
@@ -263,10 +256,15 @@ bottom:0rpx;
   font-style:normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top:10rpx;
+ 
 
 }
+.iconfont text{
+  font-family: "iconfont";
+  font-size: 24rpx;
+  margin-left: 10rpx;
 
+}
 .icon-youhuiquan:before { content: "\e625"; }
 
 .icon-wodeshoucang:before { content: "\e629"; }

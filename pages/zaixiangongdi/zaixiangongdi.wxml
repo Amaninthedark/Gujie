@@ -37,7 +37,7 @@
 
 		 <view class="filter-shadow" wx:if="{{showfilter}}" bindtap="hideFilter"></view>  <!-- 关闭筛选 -->
 	</view>
-	<scroll-view style='overflow: hidden;height:610rpx' class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading">
+	<scroll-view style='overflow: hidden;height:610rpx' class="container-body" scroll-y="true" scroll-top="{{scrolltop}}" bindscroll="scrollHandle" lower-threshold="50" bindscrolltolower="scrollLoading" style="height:700rpx">
 <view wx:for="{{abcc}}" wx:for-item="i" > 
   
      <view class='scroll-view-main ' bindtap="anli">
@@ -46,9 +46,9 @@
            <view class='scroll-view-main-right-1'>瞬江花园2#01</view>
            <view class='scroll-view-main-right-2'>本案结合业主喜好，以简约的线条和大神大神</view>
            <view class='scroll-view-main-right-bottom'> 
-              <view class='scroll-view-main-right-bottom1'><view class='iconfont icon-zan1'> 1 </view></view>
-              <view class='scroll-view-main-right-bottom2'><view class='iconfont icon-liuyan'> 0</view></view>
-              <view class='scroll-view-main-right-bottom3'><view class='iconfont icon-wodeshoucang'><text>收藏</text> </view></view>
+              <view class='scroll-view-main-right-bottom1'><view class='iconfont icon-zan1'> <text>1</text> </view></view>
+              <view class='scroll-view-main-right-bottom1'><view class='iconfont icon-liuyan'> <text>0</text></view></view>
+              <view class='scroll-view-main-right-bottom1'><view class='iconfont icon-wodeshoucang'><text>收藏</text> </view></view>
            </view> 
         </view>  
      </view> 

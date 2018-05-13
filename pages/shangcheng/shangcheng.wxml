@@ -24,11 +24,6 @@
             <text class="cart-toatl-price">￥{{totalPrice}}(不含运费)</text>
             <view class='cart-footer-button'> 立即结算</view>
         </view>
-        <view class='gouwuche' >
-           <view class='gouwuche-dianji'>
-              <navigator url=''><view class='iconfont icon-gouwuche2'></view></navigator> 
-               <text>购物车</text>
-          </view>
-        </view>
+      
     </view>
-</view>
+</view> 

@@ -48,54 +48,7 @@ Page({
             subtitle: '背景支架 坚实牢固',
             year: '3年',
           },
-          {
-            title: '精美珠光地毯',
-            subtitle: '珠光闪耀 高端时尚',
-          },
-          {
-            title: '梦幻水晶灯',
-            subtitle: '奢华璀璨 高贵典雅',
-          },
-          {
-            title: '华丽玫瑰花',
-            subtitle: '精致浪漫 时尚优雅',
-          },
-          {
-            title: '精美藤蔓',
-            subtitle: '线条优美 浪漫情调',
-          },
-          {
-            title: '主题背景板',
-            subtitle: '高贵圣洁 华丽梦幻',
-          },
-          {
-            title: '梦幻软光灯带',
-            subtitle: '光芒璀璨 增添氛围',
-          },
-          {
-            title: '欧式雕花柱',
-            subtitle: '雕刻精细 增添立体感',
-          },
-          {
-            title: '梦幻天使',
-            subtitle: '人间精灵 守护爱情',
-          },
-          {
-            title: '梦幻蜡烛',
-            subtitle: '温馨烛光 灵动火苗',
-          },
-          {
-            title: '欧式罗马花盆',
-            subtitle: '精致浪漫 时尚优雅',
-          },
-          {
-            title: '欧式罗马柱',
-            subtitle: '尽显欧式奢华与典雅',
-          },
-          {
-            title: '欧式唯美花艺',
-            subtitle: '梦幻色调 唯美大气',
-          },
+        
         ],
       },
       {
@@ -126,26 +79,7 @@ Page({
             title: '欧式罗马柱',
             subtitle: '尽显欧式奢华与典雅',
           },
-          {
-            title: '欧式罗马花盆',
-            subtitle: '高雅奢华 彰显品味',
-          },
-          {
-            title: '梦幻蜡烛',
-            subtitle: '温馨烛光 灵动火苗',
-          },
-          {
-            title: '梦幻天使',
-            subtitle: '人间精灵 守护爱情',
-          },
-          {
-            title: '欧式唯美花艺',
-            subtitle: '梦幻色调 唯美大气',
-          },
-          {
-            title: '欧式浪漫花球',
-            subtitle: '色彩搭配 增添氛围',
-          },
+     
         ],
       },
       {

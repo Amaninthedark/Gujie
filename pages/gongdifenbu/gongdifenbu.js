@@ -10,44 +10,34 @@ Page({
     xx:0,
     yy:0,
     markers: [{ 
-      iconPath: "../../images/others.png",
+      iconPath: "../../images/shuidian.png",
       id: 0,
       
       latitude: 30.069874,
       longitude: 120.534525,
-      width: 50,
-      height: 50, 
-      callout: {
-        content:'越秀外国语学院',
-      }
+      width: 40,
+      height: 40, 
+     
     }, {
-      iconPath: "../../images/others.png",
-      id: 0, 
+      iconPath: "../../images/shuidian.png",
+      id: 1, 
       latitude: 30.069250,
       longitude: 120.541270,
       
-      width: 30,
-      height: 30,
-      callout: {
-        content: '教学楼5幢',
-        padding: 0,
-       
-      },
+      width: 40,
+      height: 40,
+      
       
 
       }, {
-        iconPath: "../../images/others.png",
-        id: 0,
+        iconPath: "../../images/shuidian.png",
+        id: 2,
         latitude: 30.076187,
         longitude: 120.534739,
 
-        width: 30,
-        height: 30,
-        callout: {
-          content: '工业职业技术学院',
-          padding: 0,
-
-        },
+        width: 40,
+        height: 40,
+    
 
 
       }],
@@ -86,6 +76,10 @@ Page({
   },
   markertap(e) {
     console.log(e.markerId)
+    wx.navigateTo({
+      url: '../jingdiananlie/jingdiananlie'
+    })
+    
   },
   controltap(e) {
     console.log(e.controlId)

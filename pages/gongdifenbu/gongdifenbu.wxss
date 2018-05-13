@@ -51,15 +51,17 @@ background: #efefef;
   float: right;
 }
 .top1-right-1{
-  
-  background: #ff6801;
-  color: white;
-  height: 40rpx;
-  font-size: 27rpx;
-  display: black;
-  line-height: 1.6;
-  border-radius: 5rpx;
-  margin-top: 35rpx;
+align-content:center;
+background:#ff6801;
+color:white;
+width:140rpx;
+height:40rpx;
+font-size:24rpx;
+display:flex;
+line-height:1.7;
+border-radius:5rpx;
+margin-top:35rpx;
+justify-content:center;
 
 }
 .top2{

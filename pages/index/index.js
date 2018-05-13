@@ -76,5 +76,10 @@ Page({
     wx.navigateTo({
       url: '../calculator/calculator' 
     });
+  },
+  search: function () {
+    wx.navigateTo({
+      url: '../search/search'
+    });
   }
 })  
