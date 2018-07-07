@@ -1,9 +1,12 @@
 <view class='bg'>
 <view class="container" >
   <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view class='userinfo_btn' wx:if="{{!hasUserInfo && canIUse}}">
+     <image class="userinfo-avatar" src="/images/2.jpg" background-size="cover"></image>
+    <button  class='getUserInfo userinfo-nickname' open-type="getUserInfo" bindgetuserinfo="getUserInfo" > 登录 </button>
+    </view>
     <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
@@ -33,7 +36,7 @@
       </view >
        <view  bindtap='toast4' class='main-dai1'>
         <view class='iconfont icon-tuikuanshouhou' ></view>
-        <text>售后</text>
+        <text>售后客服</text>
         </view >
  </view>
 <view class='kuang'>

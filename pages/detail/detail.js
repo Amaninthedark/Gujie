@@ -4,31 +4,91 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bannerItem:[
-'https://g-search1.alicdn.com/img/bao/uploaded/i4/imgextra/i2/29739164/TB2KZBffv2H8KJjy1zkXXXr7pXa_!!0-saturn_solar.jpg_580x580Q90.jpg_.webp',
-'https://g-search3.alicdn.com/img/bao/uploaded/i4/i4/3339899948/TB1qp8Xc_fN8KJjSZFjXXXGvpXa_!!2-item_pic.png_580x580Q90.jpg_.webp',
-'https://g-search3.alicdn.com/img/bao/uploaded/i4/i4/3416520479/TB1YUopic2vU1JjSZFwXXX2cpXa_!!0-item_pic.jpg_580x580Q90.jpg_.webp'
-    ],
+    bannerItem:[],
+  
     tabArr: {
       curHdIndex: 0,
       curBdIndex: 0
     } ,
-    num: 0,
+    colornum: 0,
+    sizenum:0,
     num2:0,
     colorfenlei:[
-      {name:'罗汉沙发2.1米',id:0},
-      { name: '角几', id:1 },
-      { name: '单人沙发', id:2 },
-      { name: '长茶几120*60*42', id:3 },
-      { name: '方茶几120*120*45', id:4}
-    ]
+      {name:'',id:''},
+    ],
+    goods_num:'',
+    goods:'',
+    goods_index:[],
+    goods_imgs:[],
+    goods_size:[{size:'',id:''}]
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    var URL = getApp().globalData.IMGURL;
+    var that=this;
+    that.setData({
+     goods_num:options.goods_num
+    })
+    wx.getStorage({
+      key: 'GOODS',
+      success: function (res) {
+        that.setData({
+          goods:res.data
+        })
+        for(var i=0 ;i<that.data.goods.length;i++){
+            if(that.data.goods[i].goods_num==that.data.goods_num){
+              that.setData({
+                goods_index: that.data.goods[i],
+                goods_imgs: JSON.parse(that.data.goods[i].goods_imgs)
+              }) 
+            }
+         } 
+       // console.log(URL);
+         for (var i = 0; i < that.data.goods_imgs.length;i++)
+         {
+           var num = 'bannerItem[' + i + ']';         
+           var sum = URL + '/goods/' + that.data.goods_imgs[i]
+           that.setData({
+             [num]: sum,
+          
+           })
+         }
+        
+        // 轮播图 详情图
+        that.setData({
+          bottomItem: that.data.bannerItem,
+        })
+
+        //字符串分割 
+        //尺寸大小 
+        var dateList = that.data.goods_index.goods_size.split(",");
+        for (var i in dateList) {
+          var num ='goods_size['+i+'].size'
+          var num2 = 'goods_size[' + i + '].id'
+          that.setData({
+            [num]: dateList[i],
+            [num2]:i
+          })
+        }
+        //颜色分类
+        var dateList = that.data.goods_index.goods_color.split(",");
+        for (var i in dateList) {
+          var num = 'colorfenlei[' + i + '].name'
+          var num2 = 'colorfenlei[' + i + '].id'
+          that.setData({
+            [num]: dateList[i],
+            [num2]: i
+          })
+        }
+       
     
+         
+      }//suceess结束位置
+    })
+   
   },
 
   /**
@@ -95,7 +155,16 @@ Page({
       var spec_id = e.currentTarget.dataset.spec_id;
     this.setData({
       // prodetail2: this.data.prodetail[num],
-      num: spec_id
+      colornum: spec_id
+    });
+  },
+  changSize: function (e) {
+    //console.log(e);
+    var that = this;
+    var attr_id = e.currentTarget.dataset.attr_id;
+    this.setData({
+      // prodetail2: this.data.prodetail[num],
+      sizenum: attr_id
     });
   },
    goods_add: function (e) {

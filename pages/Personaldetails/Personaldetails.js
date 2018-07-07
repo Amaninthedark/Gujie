@@ -7,7 +7,16 @@ Page({
   data: {
   
   },
-
+  previewImage: function (e) {
+    var current = e.target.dataset.src;
+    var img = [];
+    img.push(e.currentTarget.dataset.img);
+    console.log(img);
+    wx.previewImage({
+      current: current, // 当前显示图片的http链接  
+      urls: img // 需要预览的图片http链接列表  
+    })
+  },   
   /**
    * 生命周期函数--监听页面加载
    */
@@ -17,6 +26,7 @@ Page({
       get_name: options.get_name,
       get_subtitle: options.get_subtitle,
       get_year: options.get_year,
+      get_img:options.get_img,
     })
   },
 

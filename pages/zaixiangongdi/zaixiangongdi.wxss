@@ -191,6 +191,7 @@ margin-top:10rpx;
 }
 .icon-jiantou{
   color: #bbb;
+  margin-top:10rpx;
 }
 
 .soujin1{

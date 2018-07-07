@@ -1,39 +1,303 @@
+var URL = getApp().globalData.PHPURL;
+var iURL = getApp().globalData.IMGURL;
 Page({
   data: {
-    classify: [
-      { name: '特惠推荐', id: "1" },
-      { name: '地板地砖', id:"2" },
-      { name: '沙发', id: "3"},
-      { name: '书桌', id:"4"}],
+    backups:[],//备份的货物数据
+    classify: [],//原始的货物数据
     currentId:1,
+    classifyid:0,
+    classifyarr: [{name:'',begin: 0,end:0}],
     list:['', '', '', '', '', '', "", "", "", ""],
-    sort_num:0,
-    sort_num_topcolor: 'black',
-    sort_num_bottomcolor: 'black',
-    sort_price: 0,
-    sort_price_topcolor: 'black',
-    sort_price_bottomcolor: 'black',
-    sort_judge: 0,
-    sort_judge_topcolor: 'black',
-    sort_judge_bottomcolor: 'black',
-    goods:[
-      { name: '新中式家具客厅', solded: 629, stock: 994, price: '4583.00', num: 0, pic:'https://gzleren.com/minishuxiangmdjj/Data/UploadFiles/product/20170815/1502793678315029.png'},
-      { name: '五彩精灵瓷砖毕莎罗仿古砖地板砖防滑阳台客厅地砖', solded: 519, stock: 694, price: '130.00', num: 0, pic:'https://img14.360buyimg.com/n7/jfs/t12586/233/2144942493/335467/16874501/5a335d5bNb5701f92.png' },
-      { name: '贝尔（BBL） 贝尔地板 强化木地板 大亚基材', solded: 318, stock: 745, price: '150.00', num: 0, pic:'https://img13.360buyimg.com/n7/jfs/t8968/355/468173706/375437/8442fc56/59a9164bN17f7c07b.jpg' },
-      { name: '北欧客厅布艺沙发 可拆洗小户型三人位懒人沙发', solded: 745, stock: 147, price: '1599.00', num: 0, pic:'https://img14.360buyimg.com/n7/jfs/t5068/203/660818261/231865/9d2e2fd3/58e5b4c7N6ebc7f5c.jpg' },
-      { name: '上林春天 书桌 实木书桌学生写字桌家用小户型办公桌', solded: 412, stock: 85, price: '558.00', num: 0, pic:'https://img14.360buyimg.com/n7/jfs/t14542/271/1971300113/180422/2bf72bfc/5a644076N308e9469.jpg' },
-      { name: '鲁菲特 沙发 实木沙发 中式客厅实木布艺转角沙发组合', solded: 652, stock: 96, price: '1388.00', num: 0, pic:'https://img12.360buyimg.com/n7/jfs/t14905/137/1829438747/255842/d94e40c3/5a59c06bNa656308c.jpg' },
-      { name: 'pvc自粘墙纸壁纸砖纹墙贴', solded: 122, stock: 916, price: '32.00', num: 0, pic: 'https://img13.360buyimg.com/n7/jfs/t4657/165/3221937109/470129/c700f6ae/58f85861N68561815.jpg' }
-    ]
+    goods:[],
+    URLimg:"",
+    goods_img:[],
+    Sales:false,
+    price:false,
+    countclassify:'',
+    countgoods: '',
+  },
+
+ //整体下拉刷新
+  onPullDownRefresh: function () {
+    var that=this;
+    that.setData({
+      Sales: false,
+      price: false,
+    })
+    that.onLoad_d();
+    wx.stopPullDownRefresh()
+  },
+
+  //列表上拉加载
+  bindDownLoad:function(){
+    var that=this;
+    var countgoods=0;
+    var goodsarr = that.data.goods; 
+    console.log(that.data.classifyarr);
+    var currentId = that.data.currentId-1
+    var classify_name = that.data.classifyarr[currentId].name
+    var classify_begin = 'classifyarr[' + currentId + '].begin'
+    var classify_end = 'classifyarr[' + currentId + '].end'
+    var classify_begin_sum = that.data.classifyarr[currentId].begin + 10;
+    var classify_end_sum = that.data.classifyarr[currentId].end + 10;
+    console.log(classify_begin_sum);
+    console.log(that.data.classifyarr[currentId]);
+    that.setData({
+      [classify_begin]: classify_begin_sum,
+      [classify_end]: classify_end_sum,
+    })
+        wx.request({
+          //上线接口地址要是https测试可以使用http接口方式 获取左侧列表中包含着获取货物列表
+          url: URL + '/Mall/goods_query_refresh',
+          data: {
+            classify_data: that.data.classifyarr[currentId].name,
+            begin_data: that.data.classifyarr[currentId].begin,
+            end_data: that.data.classifyarr[currentId].end,
+          },
+          method: 'GET',
+          header: {
+            'content-type': 'application/x-www-form-urlencoded'
+          },
+          success: function (res) { 
+              that.setData({
+                countgoods: 0
+              })
+             
+              for (var j in res.data) {
+                goodsarr.push(res.data[that.data.countgoods])
+                that.setData({
+                  countgoods: that.data.countgoods + 1
+                })
+              } 
+                  that.setData({
+                    goods: goodsarr,
+                  });
+                  //获取到后存起来方便后面调用 
+                  wx.setStorage({
+                    key: "GOODS",
+                    data: that.data.goods
+                  })
+                  //将货物添加到分类列表
+                  for (var i in that.data.classify) {
+                    var f = 0
+                    for (var j in that.data.goods) {
+                      var num = 'classify[' + i + '].goods_classify_list[' + f + ']'
+                      if (that.data.classify[i].goods_classify_name == that.data.goods[j].goods_classify) {
+                        f = f + 1;
+                        that.setData({
+                          [num]: that.data.goods[j]
+                        })
+                      }
+                    }
+                  }
+                  //备份原始数据
+                  that.setData({
+                    backups: that.data.classify
+                  });
+              if(res.data.length==0)
+              {
+                  wx.showToast({
+                    title: '没有了',              
+                     image: '/images/W.png'
+                  })
+              }else{
+                wx.showToast({
+                  title: '加载中',
+                  icon: 'loading'
+                                  })
+              }
+          }
+        })
+  
+ //   console.log('circle 下一页');
+  },
+
+  //商品排序控制器
+  sortGoods_control:function(e){
+    var that=this;
+    var sortid = e.currentTarget.dataset.sort;
+    if (sortid==1){
+      var Sales = !that.data.Sales
+      that.setData({
+        Sales: Sales,
+        price:false
+      })
+    }else{
+      var price = !that.data.price
+      that.setData({
+        Sales: false,
+        price: price
+      })
+    }
+   
+    that.onShow();
+  },
+
+  //商品排序
+  sortGoods:function(){
+    var that = this;
+    var classiyLT = that.data.classify
+    console.log(that.data.classify);
+    if (that.data.Sales){
+    var classiyLT = that.data.classify
+    for (var i = 0; i < classiyLT.length; i++) {
+      for (var j = 0; j < classiyLT[i].goods_classify_list.length - 1; j++) {
+        for (var k = 0; k < classiyLT[i].goods_classify_list.length - 1-j ; k++)// j开始等于0，  
+        { 
+          if (parseInt(classiyLT[i].goods_classify_list[k].goods_out) < parseInt(classiyLT[i].goods_classify_list[k + 1].goods_out)) {
+            var arrt = classiyLT[i].goods_classify_list[k];
+            classiyLT[i].goods_classify_list[k] = classiyLT[i].goods_classify_list[k + 1];
+            classiyLT[i].goods_classify_list[k + 1] = arrt;
+          }
+        }  
+      }
+     }
+    }
+    else if (that.data.price){
+      var classiyLT = that.data.classify
+      for (var i = 0; i < classiyLT.length; i++) {
+        for (var j = 0; j < classiyLT[i].goods_classify_list.length - 1; j++) {
+          for (var k = 0; k < classiyLT[i].goods_classify_list.length - 1 - j; k++)// j开始等于0，  
+          {
+            if (parseInt(classiyLT[i].goods_classify_list[k].goods_price) > parseInt(classiyLT[i].goods_classify_list[k + 1].goods_price)) {
+              var arrt = classiyLT[i].goods_classify_list[k];
+              classiyLT[i].goods_classify_list[k] = classiyLT[i].goods_classify_list[k + 1];
+              classiyLT[i].goods_classify_list[k + 1] = arrt;
+            }
+          }
+        }
+      }
+    }else{
+      classiyLT = that.data.backups;
+    }
+    return classiyLT;
+  },
+
+  //列表刷新初始化 
+  Refreshinitial: function (classify){
+    var that=this;
+    for (var i = 0; i < classify.length; i++) {
+      var classify_name = 'classifyarr[' + i + '].name'
+      var classify_begin = 'classifyarr[' + i + '].begin'
+      var classify_end = 'classifyarr[' + i + '].end'
+      that.setData({
+        [classify_name]: classify[i].goods_classify_name,
+        [classify_begin]: 0,
+        [classify_end]: 10,
+      })
+    }
+  
+  },
+
+  //页面刷新
+  onLoad_d:function(){
+    var that = this;
+    var goodsarr=[]; 
+       that.setData({
+       URLimg: iURL
+    });
+    wx.request({
+      //上线接口地址要是https测试可以使用http接口方式 获取左侧列表中包含着获取货物列表
+      url: URL + '/Mall/goods_classify',
+      data: {
+      },
+      method: 'GET',
+      header: {
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        that.setData({
+          classify: res.data
+        });
+        that.Refreshinitial(res.data);
+        that.setData({
+          countclassify:0
+        })
+        for (var i = 0; i < that.data.classifyarr.length;i++)
+        {
+       
+                wx.request({
+                  //上线接口地址要是https测试可以使用http接口方式 获取左侧列表中包含着获取货物列表
+                  url: URL + '/Mall/goods_query_refresh',
+                  data: {
+                    classify_data: that.data.classifyarr[that.data.countclassify].name,
+                    begin_data: that.data.classifyarr[that.data.countclassify].begin,
+                    end_data: that.data.classifyarr[that.data.countclassify].end,
+
+                  },
+                  method: 'GET', 
+                  header: {
+                    'content-type': 'application/x-www-form-urlencoded'
+                  },
+                  success: function (res) {          
+        //  goods_img: JSON.parse(res.data[6].goods_img)//json字符串转数组
+                  that.setData({
+                    countgoods: 0
+                  })
+                  for(var j in res.data){
+                    goodsarr.push(res.data[that.data.countgoods])
+                    that.setData({
+                      countgoods: that.data.countgoods+1
+                    })
+                  }
+              
+                 if (that.data.countclassify === that.data.classifyarr.length){
+                
+                      that.setData({
+                        goods: goodsarr,
+                      });
+                        //获取到后存起来方便后面调用 
+                        wx.setStorage({
+                          key: "GOODS",
+                          data: that.data.goods 
+                        })
+                      
+                      }
+                        //将货物添加到分类列表
+                        for (var i in that.data.classify) {
+                          var f = 0
+                          for (var j in that.data.goods) {
+                            var num = 'classify[' + i + '].goods_classify_list[' + f + ']'
+                            if (that.data.classify[i].goods_classify_name == that.data.goods[j].goods_classify) {
+                              f = f + 1;
+                              that.setData({
+                                [num]: that.data.goods[j]
+                              })
+                            }
+                          }
+                        }
+                        //备份原始数据
+                        that.setData({
+                          backups: that.data.classify
+                        });
+                       
+                 },
+                  
+              })
+                //计数
+                that.setData({
+                  countclassify: that.data.countclassify+1
+                })
+            }              
+      },
+
+    })
+      wx.stopPullDownRefresh()
   },
   onLoad: function (options) {
-    
+    this.onLoad_d();
   },
   onReady: function () {
 
   },
   onShow: function () {
-
+   var that=this;
+    var arrt = that.sortGoods()
+    that.setData({
+      classify: arrt,
+      //  goods_img: JSON.parse(res.data[6].goods_img)//json字符串转数组
+    });
+   console.log(arrt);
   },
   onHide: function () {
 
@@ -41,9 +305,7 @@ Page({
   onUnload: function () {
 
   },
-  onPullDownRefresh: function () {
-
-  },
+ 
 
   onReachBottom: function () {
 
@@ -75,12 +337,16 @@ Page({
       goods: goods
     });
   },
+  //选项卡
   Select:function (e) {
+    var cid = e.target.dataset.id;
     var id = e.target.dataset.typeid;
     this.setData({
-      currentId: id
+      currentId: id,
+      classifyid:cid
     })
   },
+
   sort_num_click:function(){
     var num = this.data.sort_num;
     if(num == 0){
@@ -109,26 +375,13 @@ Page({
       this.setData({ sort_price: 0 });
     }
   },
-  sort_judge_click: function () {
-    var num = this.data.sort_judge;
-    if (num == 0) {
-      this.setData({ sort_judge_bottomcolor: 'red' });
-      this.setData({ sort_judge: 1 });
-    } else if (num == 1) {
-      this.setData({ sort_judge_topcolor: 'red' });
-      this.setData({ sort_judge_bottomcolor: 'black' });
-      this.setData({ sort_judge: 2 });
-    } else if (num == 2) {
-      this.setData({ sort_judge_topcolor: 'black' });
-      this.setData({ sort_judge: 0 });
-    }
-  },
-  s:function(ev){
-      
-  },
+
+
   tapName: function (e) {
+    var goods_num = e.currentTarget.dataset.goods_num;
+    //console.log(goods_num);
     wx.navigateTo({
-      url: '../detail/detail'
+      url: '../detail/detail?goods_num=' + goods_num
     })
   },
   Gwc: function (e) {

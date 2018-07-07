@@ -1,5 +1,4 @@
 {
-  
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
@@ -36,7 +35,8 @@
     "navigationBarBackgroundColor": "#EECFA1",
     "navigationBarTitleText": "古杰装饰",
     "navigationBarTextStyle":"white",
-    "backgroundColorTop":"#F7F7F7"
+    "backgroundColorTop":"#F7F7F7",
+    "backgroundTextStyle": "dark"
   },
       "tabBar": { 
         "color":"#CECECE",
@@ -80,6 +80,7 @@
         "downloadFile": 10000
       },
       "debug": true
+  
   }
  
 

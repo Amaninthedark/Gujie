@@ -1,5 +1,6 @@
 <view class="main">
-    <view wx:if="{{hasList}}">
+    <view wx:if="{{check}}">
+      <view wx:if="{{hasList}}">
         <view class="cart-box">
             <view class="cart-list" wx:for="{{carts}}" wx:key="{{index}}">
                 <icon wx:if="{{item.selected}}" type="success"  data-index="{{index}}"  class="cart-pro-select" bindtap="selectList"/>
@@ -24,6 +25,12 @@
             <text class="cart-toatl-price">￥{{totalPrice}}(不含运费)</text>
             <view class='cart-footer-button'> 立即结算</view>
         </view>
-      
+       </view>
+       <view wx:else>
+        列表空
+       </view>
+    </view>
+    <view wx:else>
+        请先登录
     </view>
 </view> 

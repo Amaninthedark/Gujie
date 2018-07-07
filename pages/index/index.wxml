@@ -1,3 +1,4 @@
+
 <import src="../../wxSearch/wxSearch.wxml"  />
 <scroll-view style="height: 100%;" scroll-y="true" scroll-top="{{scrollTop.scroll_top}}" bindscroll="scrollTopFun">  
  <view>
@@ -18,6 +19,7 @@
     <label class='index-search-label'><icon type="search" size="15" />搜索喜欢的商品</label>
   </view> 
 </view>
+
 <view class='index-conten'>
     <view class='index-page'  >
    

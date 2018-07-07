@@ -40,6 +40,7 @@ Page({
 
 
   onLoad: function () {
+    
     console.log('onLoad test');
   },
   kefu:function(){

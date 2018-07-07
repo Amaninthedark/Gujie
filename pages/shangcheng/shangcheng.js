@@ -1,23 +1,45 @@
 // page/component/new-pages/cart/cart.js
+const app = getApp()
 Page({
   data: {
+    goods_num:[],
     carts: [],               // 购物车列表
+    check:0,
     hasList: false,          // 列表是否有数据
     totalPrice: 0,           // 总价，初始为0
     selectAllStatus: true,    // 全选状态，默认全选
     obj: {
       name: "hello"
-    }
+    },
+    URL: getApp().globalData.PHPURL
+  },
+  //判断是否登录
+  checkLogin:function(){
+      var that=this;
+      if (wx.getStorageSync('login')==1){
+        that.setData({
+          check:1
+        })
+        //获取用户的购物车数组的长度判断是否为空
+        var cartslength = wx.getStorageSync('carts').length
+        if (cartslength!=0)
+        {
+          that.setData({
+            hasList: true, 
+            goods_num: wx.getStorageSync('carts')
+          });
+        }    
+      }
+    
+  },
+ 
+  onLoad:function(){
+    var that=this;
+    this.checkLogin();
   },
   onShow() {
-    this.setData({
-      hasList: true,
-      carts: [
-        { id: 1, title: '浓香型铁观音', image: '../images/likepro.jpg', num: 1, price: 60,guige:250,selected: true },
-        { id: 2, title: '金骏眉黄金雅', image: '../images/likepro.jpg', num: 1, price: 100, guige:250, selected: true },
-        { id: 2, title: '布朗顿香普洱茶', image: '../images/likepro.jpg', num: 1, price: 120, guige: 250, selected: true }
-      ]
-    });
+    
+  
     this.getTotalPrice();
   },
   /**

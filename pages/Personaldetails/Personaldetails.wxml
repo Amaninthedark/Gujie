@@ -2,7 +2,7 @@
   <view class='heard'>
     <view class='heard-content'>
       <view class='heard-images'>
-        <image src="/images/1.jpg"></image>
+        <image src='{{get_img}}' bindtap="previewImage" data-img="{{get_img}}"></image>
       </view> 
       <view class='heard-name'>
         {{get_name}}

@@ -1,17 +1,4 @@
 /**app.wxss**/
-
-
-
-
-
-
-
-
-
-
-
-
-
 @font-face {font-family: "iconfont";
   src: url('iconfont.eot?t=1521367871799'); /* IE9*/
   src: url('iconfont.eot?t=1521367871799#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -73,13 +60,6 @@
 .icon-dizhiguanli:before { content: "\e63f"; }
 
 .icon-xingxing:before { content: "\e81f"; }
-
-
-
-
-
-
-
 
 
 /* 购物车 */

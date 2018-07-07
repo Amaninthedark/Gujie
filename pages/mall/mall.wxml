@@ -3,72 +3,50 @@
     <input placeholder='搜索古杰商城'></input>
   </view>
   <view class='mall-bottom'>
-    <!-- 左侧类型 -->
+    <!-- 左右侧关联 -->
+     <!--左侧导航想要关联右边物品 只需要在这里加一个标识 标记当前的选项 传值这个标记到后台 -->
     <view class="left">
-      <view  bindtap="Select" data-typeid="{{item.id}}" class="{{currentId==item.id?'clickSel':''}}" wx:for="{{classify}}">
-      {{item.name}}
+      <view  bindtap="Select" data-typeid="{{item.id}}" data-id="{{index}}" class="{{currentId==item.id?'clickSel':''}}" wx:for="{{classify}}">
+      {{item.goods_classify_name}}
       </view>
     </view>
-
     <view class="right">
       <view class="tabTit">
-        <view class="flex1" bindtap='sort_num_click'>
+        <view class="flex1 {{Sales?'fiex_color':''}}" data-sort="1" bindtap='sortGoods_control'>
           <text >销量</text>
           <view class='fs-up'>
-            <span class='iconfont icon-triangle-top '  style="color:{{sort_num_topcolor}};"></span>
-            <span class='iconfont icon-triangle-bottom' style="color:{{sort_num_bottomcolor}};"></span>
+           
           </view>
         </view>
-        <view class="flex1" bindtap='sort_price_click'>
+        <view class="flex2 {{price?'fiex_color':''}}" data-sort="2" bindtap='sortGoods_control'>
           <text>价格</text>
-          <view class='fs-up'>
-            <span class='iconfont icon-triangle-top' style="color:{{sort_price_topcolor}};"></span>
-            <span class='iconfont icon-triangle-bottom' style="color:{{sort_price_bottomcolor}};"></span>
+          <view class='fs-up'>     
           </view>
-        </view>
-        <view class="flex1" bindtap='sort_judge_click'>
-          <text>评价</text>
-          <view class='fs-up'>
-            <span class='iconfont icon-triangle-top' style="color:{{sort_judge_topcolor}};"></span>
-            <span class='iconfont icon-triangle-bottom' style="color:{{sort_judge_bottomcolor}};"></span>
-          </view>
-
-        </view>
+        </view> 
+     
       </view>
-      <scroll-view class="mall-list" scroll-y="true">
-        <view wx:for="{{goods}}">
 
-          <view class="ping" data-pro_id="1">
-
-            
-            <view class="ping_b" bindtap="tapName">
-         
-              <image src="{{item.pic}}">
+       <!--将左侧导航传到后台的值 再取出来 从数据中提取出相应的信息  -->
+      <scroll-view class="mall-list" bindscrolltolower="bindDownLoad"	 scroll-y="true" >
+          <view class="ping" data-pro_id="0"  wx:for="{{classify[classifyid].goods_classify_list}}" item="item"> 
+            <view class="ping_b" bindtap="tapName"  data-goods_num="{{item.goods_num}}">
+              <image src='{{URLimg}}/goods/{{item.goods_img}}'>
               </image>
-               
-            </view>
-       
-                
-            <view class="ping_a">
-          
-              <view class="ping_aa" bindtap="tapName">{{item.name}}</view>
-              <view class='ping_num' bindtap="tapName">
-                <view class="ping_cc">已售：{{item.solded}}</view>
-                <view class="ping_dd">库存：{{item.stock}}</view>
-              </view>
-            
+            </view>               
+            <view class="ping_a">                  
+              <view class="ping_aa" bindtap="tapName"  data-goods_num="{{item.goods_num}}">{{item.goods_name}}</view>
+              <view class='ping_num' bindtap="tapName"  data-goods_num="{{item.goods_num}}">
+                <view class="ping_cc">已售：{{item.goods_out}}</view>
+                <view class="ping_dd">库存：{{item.goods_inventory}}</view>
+              </view>    
               <view class="padding_sp">
-                <view class="ping_ee">￥{{item.price}}</view>
-                <view class='iconfont .icon-jian'  bindtap='goods_sub' data-index="{{index}}"></view>
-                
-                
-                <view >{{item.num}}</view>
-                <view class='iconfont .icon-jia' bindtap='goods_add' data-index="{{index}}"></view>                
+                <view class="ping_ee">￥{{item.goods_price}}</view>      
+                <view >{{item.num}}</view>                   
               </view>
             </view>
           </view>
      
-        </view>
+    
       
       </scroll-view>
     </view>

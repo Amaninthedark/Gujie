@@ -25,10 +25,24 @@ page{
    margin-left: 35rpx;
   width: 90%;
 }
+.getUserInfo{
+  margin-top:-30rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+    background: none !important;
+  color: #424242 !important;
+  font-size: 30rpx;
+}
+/*按钮透明*/
+.getUserInfo::after{
+  border: none;
+}
 .userinfo {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 200rpx;
 }
 
 .userinfo-avatar {
